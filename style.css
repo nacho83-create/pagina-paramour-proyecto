@@ -1,66 +1,11 @@
-body{
-    margin: 50;
-    padding: 10;
-    font-family: 'Delicious Handrawn', cursive;
-}
-a{
-    text-decoration: none;
-}
-li{
-    list-style: none ;
-}
-.contenedor {
-   
-    width: 95%;
-    max-width: 765 px;
-    margin:auto;
-   
-    
-}
-header{
-    background: url(imagenes/cantante.jpg) ;
-    height: 115vh;
-}
-header .menu{
-   display: flex;
-   justify-content:space-between;
-   padding-top: 10px;
-   
+* {
+    margin: 0;
+    padding: 0;
 }
 
-header .logo y menu {
-    
-    display: flex;
-    align-items:center;
-}
-nav ul {
-    display: flex;
-}
-nav ul li{
-    margin: 0px 30px;
-}
-nav ul li a{
-    color: rgb(91, 163, 223);
-    text-decoration: none;
-    display: inline-block;
-    padding: 10px 10px;
-    line-height: normal;
-    font-size: 25px;
-    transition: all 500ms ease;
-    border-bottom: botton 4px solid transparent;
-}
-nav ul li a:hover{
-    color: rgb(218, 34, 172);
-    border-bottom: 4px solid transparent;
-}
-header .titular{
-    margin-top: 20vh;
-    margin-left: 10vh;
-    color: aliceblue;
-}
-header .titular .amarillo{
-    color: rgb(218, 34, 172);
-   
+body {
+    font-family: 'Delicious Handrawn', cursive;
+    background-color: #1F1F1F;
 }
 
 h1 {
@@ -68,23 +13,117 @@ h1 {
     width: 30%;
 }
 
+/* Images used for background */
+.img1 {
+    background-image: url("imagenes/background/cantante.jpg");
+}
 
-header .botones a{
+.img2 {
+    background-image: linear-gradient(rgba(5, 7, 12, 0.75), rgba(5, 7, 12, 0.75)), url("imagenes/background/stage-live.jpg");
+}
+
+/* Navbar*/
+header {
+    display: flex;
+    height: 180px;
+    justify-content: space-around;
+    background-color: transparent;
+    width: 100%;
+    padding: 10px;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    transition: background-color 0.4s ease-in-out;
+}
+
+header.scrolled {
+    background-color: white;
+    opacity: 0.8;
+}
+
+nav a {
+    color: rgb(91, 163, 223);
+    text-decoration: none;
+    padding: 40px 40px;
+    line-height: normal;
+    font-size: 25px;
+    transition: all 500ms ease;
+    border-bottom: botton 4px solid transparent;
+}
+
+nav a:hover {
+    color: rgb(218, 34, 172);
+    border-bottom: 4px solid transparent;
+}
+
+.logo {
+    height: 150px;
+}
+
+/* Section 1 */
+.section-1 {
+    margin: 0;
+    padding-top: 180px;
+    padding-left: 15vh;
+}
+
+.section-1 .titular {
+    margin-top: 15vh;
+}
+
+.titular {
+    color: aliceblue;
+}
+
+.spicyPink {
+    color: rgb(218, 34, 172);
+
+}
+
+.section-1 .botons {
+    margin-top: 20px;
+    width: 300px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.botons a {
     color: rgb(91, 163, 223);
     text-decoration: none;
     display: inline-block;
-    padding: 30px 50px;
+    padding: 10px;
     line-height: normal;
     font-size: 35px;
     transition: all 500ms ease;
     border-bottom: botton 6px solid transparent;
-
 }
-header .botones a:hover{
+
+.botons a:hover {
     color: rgb(218, 34, 172);
     border-bottom: 6px solid transparent;
 }
 
+/*Section 2 */
+.section-2 {
+    display: grid;
+    place-content: center;
+    background-color: aqua;
+}
 
+.section-2 .link-events {
+    text-decoration: none;
+    font-size: 120px;
+}
 
+.subtitle {
+    color: aliceblue;
+    text-align: center;
+    font-size: 30px;
+}
 
+/* Background primary style for all sections */
+.background {
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+}
