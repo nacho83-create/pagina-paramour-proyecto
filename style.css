@@ -80,14 +80,14 @@ nav a:hover {
 
 }
 
-.section-1 .botons {
+.section-1 .buttons {
     margin-top: 20px;
     width: 300px;
     display: flex;
     justify-content: space-between;
 }
 
-.botons a {
+.buttons a {
     color: rgb(91, 163, 223);
     text-decoration: none;
     display: inline-block;
@@ -98,7 +98,7 @@ nav a:hover {
     border-bottom: botton 6px solid transparent;
 }
 
-.botons a:hover {
+.buttons a:hover {
     color: rgb(218, 34, 172);
     border-bottom: 6px solid transparent;
 }
