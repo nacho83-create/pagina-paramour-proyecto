@@ -127,3 +127,70 @@ nav a:hover {
     background-position: center;
     height: 100vh;
 }
+footer{
+    position: absolute;
+    height:auto;
+    background-color: black;
+    background-size: cover;
+    background-position: center;
+    width: 100vw;
+    padding-top: 40px;
+}
+
+footer .contenido.footer{
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+footer .contenido.footer h2{
+    font-size: 2.8rem;
+    font-weight: 200;
+    text-transform: capitalize;
+    line-height: 5rem;
+    color: azure;
+}
+footer .contenido.footer p{
+    max-width: 500px;
+    margin: 10px auto;
+    line-height: 30px;
+    font-size: 15px;
+    color: azure;
+}
+.redes.sociales{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 1rem 0 3 rem 0;
+}
+.redes.sociales a{
+    margin:10px 10px;
+    text-decoration: none;
+    color: azure;
+}
+.redes.sociales a i{
+    font-size: 2.1rem;
+    transition: color .4s ease;
+}
+.redes.sociales a:hover i{
+    color: rgb(218, 34, 172);    
+}
+.boton.footer{
+    background: rgb(0,0,0);
+    width: 200vw;
+    padding: 100px 0 0 0;
+    text-align: center;
+}
+.boton.footer p{
+    font-size: 20px;
+    word-spacing: 5px;
+    text-transform: capitalize;
+}
+.boton.footer span{
+    text-transform: uppercase;
+    opacity: 0.5;
+    font-weight: 200;
+}
