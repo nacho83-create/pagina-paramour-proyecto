@@ -1,196 +1,342 @@
-* {
-    margin: 0;
-    padding: 0;
+*{
+    margin: 1px;
+    padding: 5px;
+    box-sizing: border-box;
+    font-family: 'Delicious Handrawn', cursive ;
+    
 }
-
-body {
-    font-family: 'Delicious Handrawn', cursive;
-    background-color: #1F1F1F;
-}
-
-h1 {
-    font-size: 50px;
-    width: 30%;
-}
-
-/* Images used for background */
-.img1 {
-    background-image: url("imagenes/background/cantante.jpg");
-}
-
-.img2 {
-    background-image: linear-gradient(rgba(5, 7, 12, 0.75), rgba(5, 7, 12, 0.75)), url("imagenes/background/stage-live.jpg");
-}
-
-/* Navbar*/
-header {
+.cuerpo{
+    background-color: antiquewhite;
     display: flex;
-    height: 180px;
-    justify-content: space-around;
-    background-color: transparent;
-    width: 100%;
-    padding: 10px;
-    align-items: center;
-    position: fixed;
-    top: 0;
+    flex-flow: column nowrap;
+}
+    .cabecera{
+    background-image: url(imagenes/fondoCabecera.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-flow: column nowrap;
     transition: background-color 0.4s ease-in-out;
-}
+    }
+    .cabecera-discografia{
+        background-color: black;
+    }
+        
 
-header.scrolled {
-    background-color: white;
-    opacity: 0.8;
-}
+    
+        .seccion-1{
+            background: transparent;
+        }
+            .menu{
+                background: transparent;
+                display: flex;
+                flex-flow: row nowrap;
+                height: 100px;
+                align-items: center;
+            }
+                
+                .logo{
+                    background:transparent ;
+                    flex: 0 1 auto;
+                    height: 100px;
+                    width: 100px;
+                    padding-top: 10px;
+                }
+                .navegacion{
+                    display: flex;
+                    background:transparent ;
+                    flex: 1 1 auto;
+                    height: 50px;
+                    justify-content:space-around;
+                }
+                    .navegacion a{
+                        color: rgb(5, 160, 250);
+                        text-decoration: none;
+                        line-height: normal;
+                        font-size: 31px;
+                        transition: botton all 500ms ease;
 
-nav a {
-    color: rgb(91, 163, 223);
-    text-decoration: none;
-    padding: 40px 40px;
-    line-height: normal;
-    font-size: 25px;
-    transition: all 500ms ease;
-    border-bottom: botton 4px solid transparent;
-}
+                    }
+                        .navegacion a:hover{
+                            color: rgb(218, 34, 172);
+                            border-bottom: botton 4px solid transparent;
+                        }
+            .texto-principal{
+                background: transparent;
+                font-size: 30px;
 
-nav a:hover {
-    color: rgb(218, 34, 172);
-    border-bottom: 4px solid transparent;
-}
-
-.logo {
-    height: 150px;
-}
-
-/* Section 1 */
-.section-1 {
-    margin: 0;
-    padding-top: 180px;
-    padding-left: 15vh;
-}
-
-.section-1 .titular {
-    margin-top: 15vh;
-}
-
-.titular {
-    color: aliceblue;
-}
-
-.spicyPink {
-    color: rgb(218, 34, 172);
-
-}
-
-.section-1 .buttons {
-    margin-top: 20px;
-    width: 300px;
+            }
+                .titular{
+                    background: transparent;
+                    display: flex;
+                    justify-content: left;
+                    text-align: left;
+                    padding-right: 65%;
+                    padding-top: 20%;
+                }
+                    .titular h1{
+                        color: rgb(5, 160, 250);
+                        text-decoration: none;
+                    }
+                    .spicyPink{
+                        color: rgb(218, 34, 172);
+                    }
+                      
+                .botones{
+                    background:transparent;
+                    text-align: center;
+                    font-size: 40px;
+                    padding: 10% 73% 20% 0%;
+                }
+                    .botones a{
+                        color: rgb(5, 160, 250);
+                        text-decoration: none;
+                    
+                    }
+                        .botones a:hover{
+                            color: rgb(218, 34, 172);
+                            border-bottom: botton 4px solid transparent; 
+                        }
+        .texto-discografia{
+            background-color: blueviolet;
+        }
+        .titular-discografia{
+            background-color: antiquewhite;
+        }
+    
+    .medio{
+    background-image:linear-gradient(rgba(5, 7, 12, 0.75), rgba(5, 7, 12, 0.75)),url(imagenes/main.jpg);
     display: flex;
-    justify-content: space-between;
-}
-
-.buttons a {
-    color: rgb(91, 163, 223);
-    text-decoration: none;
-    display: inline-block;
-    padding: 10px;
-    line-height: normal;
-    font-size: 35px;
-    transition: all 500ms ease;
-    border-bottom: botton 6px solid transparent;
-}
-
-.buttons a:hover {
-    color: rgb(218, 34, 172);
-    border-bottom: 6px solid transparent;
-}
-
-/*Section 2 */
-.section-2 {
-    display: grid;
-    place-content: center;
-    background-color: aqua;
-}
-
-.section-2 .link-events {
-    text-decoration: none;
-    font-size: 120px;
-}
-
-.subtitle {
-    color: aliceblue;
-    text-align: center;
-    font-size: 30px;
-}
-
-/* Background primary style for all sections */
-.background {
+    background-position: center center;
+    background-repeat: no-repeat;
     background-size: cover;
-    background-position: center;
-    height: 100vh;
-}
-footer{
-    position: absolute;
-    height:auto;
+    flex-flow: column;
+    align-items: center;
+    padding-top: 20%;
+    padding-bottom: 20%;
+    }
+                                        
+    .medio-discografia{
+        background: black;
+        display: flex;
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: cover;
+
+
+    }
+        .link-events-titular{
+        background: transparent;
+        display: flex;
+        flex-flow: column;
+        font-size: 100px;
+        }
+            .subtitle{
+            background: transparent;
+            display: flex;
+            flex-flow: column;
+            }
+                .subtitle p{
+                    font-size: 50px ;
+                    color: white;
+                    text-decoration: none;
+                }
+        .articulos a{
+            color: white;
+            text-decoration: none;
+        }        
+        .articulos-discografia{
+            background-color: antiquewhite;
+            flex: 2 1 auto;
+            display: flex;
+            flex-flow: row wrap;
+        }
+            .articulo-disco{
+                background-color: aqua;
+                flex: 1 1 100%;
+            }
+        .videos{
+            background-color: cornflowerblue;
+            flex: 1 1 auto;
+            flex-flow: row wrap;
+           
+        } 
+            .video1{
+            background-color: blue;
+            flex: 1 1 auto;
+            height: 40%;
+            }
+            .video2{
+            background-color: aquamarine;
+            flex: 1 1 auto;
+            height: 40%;
+            }      
+        
+    .pie-pagina{
     background-color: black;
-    background-size: cover;
-    background-position: center;
-    width: 100vw;
-    padding-top: 40px;
-}
+    display: flex;
+    justify-content: center;
+    }
+        .contenido-footer{
+            background:transparent;
+            width: 100%;
+            display: flex;
+            flex-direction: column;  
+        }
+            .contactos{
+                background:transparent;
+                display: flex;
+                flex-direction: column;
+            }
+                .titulo-banda{
+                    display: flex;
+                    justify-content: center;
+                    font-size: 45px;
+                    color: white;
+                }
+                .contactos p{
+                    display: flex;
+                    justify-content: center;
+                    font-size: 25px;
+                    color: white;
+                }
+            .redes-sociales{
+                background:transparent;
+                display: flex;
+                justify-content: center;
+            }
+                .redes-sociales a{
+                    display: block;
+                    padding: 0px 0px;
+                    background-color: rgb(36, 37, 37);
+                    color: aliceblue;
+                    line-height: 10px;
+                    font-size: 35px;
+                    box-shadow: 0px 6px 6px 0 rgba(36, 37, 37, 0.75);
+                    transition: .2s;
+                }
+                .redes-sociales a:hover{
+                    filter: blur(1.5px);
+                }
+               
+                .social-media-icons i{
+                    margin:10px 10px;
+                    text-decoration: none;
+                    color: azure;
+                }
+                .social-media-icons:hover i{
+                    color:rgb(218, 34, 172) ;
+                }
+            .boton-footer{
+                background:transparent;
+                display: flex;
+                justify-content: center;
+            }
+                .boton-footer p{
+                    font-size: 15px;
+                    color: aliceblue;
+                    padding-top: 10%;
+                }
+                .boton-footer span{
+                    opacity: 0.5;
+                }
+@media all and (max-width: 600px){
+    .cabecera{
+        background-image: linear-gradient(rgba(20, 7, 12, 0.75), rgba(20, 7, 12, 0.75)),url(imagenes/fondo.jpg);
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        display: flex;
+        flex-flow: column nowrap;
+       
+    }    
+    .menu{
+        flex-direction: column;
+        height: auto;
+    }
+        .navegacion{
+            flex-direction: row;
+            height: auto;
+        }
+            .navegacion a{
+                font-size: 23px;
+            }
+        .texto-principal{
+            background:transparent;
+            padding-top: 50%;
+        }    
+        .titular{
+            background: transparent;
+            padding: 0;
+            
+        }
+            .titular h1{
+                font-size: 33px;
+                text-align:center;
+            }
+        
+        .botones{
+            background: transparent ;
+            padding: 20px;
 
-footer .contenido.footer{
-    display: flex;
-    text-align: center;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    text-align: center;
+        }
+            .botones a{
+                background: transparent;
+                font-size: 25px;
+            }
+          
+    .medio{
+        flex-direction: column;
+        height: auto;
+    }
+        .articulos{
+             text-align: center;
+        }
+        .link-events-titular{
+            font-size: 60px;
+        }
+        .subtitle p{
+            font-size: 40px;
+        }
+    .pie-pagina{
+        flex-direction: column;
+        height: auto;
+    }
+        .titulo-banda{
+            font-size: 20px;
+        }
+        .contactos p{
+            font-size:15px;
+        }
+        .redes-sociales a{
+            display: block;
+            padding: 0px 0px;
+            background-color: rgb(36, 37, 37);
+            color: aliceblue;
+            line-height: 7px;
+            font-size: 15px;
+            box-shadow: 0px 6px 6px 0 rgba(36, 37, 37, 0.75);
+            transition: .2s;
+        }
+        .boton-footer p{
+            font-size: 10px;
+        }
 }
-footer .contenido.footer h2{
-    font-size: 2.8rem;
-    font-weight: 200;
-    text-transform: capitalize;
-    line-height: 5rem;
-    color: azure;
-}
-footer .contenido.footer p{
-    max-width: 500px;
-    margin: 10px auto;
-    line-height: 30px;
-    font-size: 15px;
-    color: azure;
-}
-.redes.sociales{
-    list-style: none;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin: 1rem 0 3 rem 0;
-}
-.redes.sociales a{
-    margin:10px 10px;
-    text-decoration: none;
-    color: azure;
-}
-.redes.sociales a i{
-    font-size: 2.1rem;
-    transition: color .4s ease;
-}
-.redes.sociales a:hover i{
-    color: rgb(218, 34, 172);    
-}
-.boton.footer{
-    background: rgb(0,0,0);
-    width: 200vw;
-    padding: 100px 0 0 0;
-    text-align: center;
-}
-.boton.footer p{
-    font-size: 20px;
-    word-spacing: 5px;
-    text-transform: capitalize;
-}
-.boton.footer span{
-    text-transform: uppercase;
-    opacity: 0.5;
-    font-weight: 200;
-}
+@media all and (max-width: 900px){
+    .menu{
+        flex-direction: column;
+        height: auto;
+        width: auto;
+    }
+        .navegacion{
+            width:auto;
+            justify-content: center;
+        }
+    .medio{
+        flex-direction: column;
+        height: auto;   
+    }
+}            
+
+
