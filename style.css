@@ -2,7 +2,11 @@
     margin: 1px;
     padding: 2px;
     box-sizing: border-box;
-    font-family: 'Delicious Handrawn', cursive ;
+    font-family: 'Dosis', sans-serif;
+    font-family: 'Maven Pro', sans-serif;
+    font-family: 'Noto Sans', sans-serif;
+    font-family: 'Raleway', sans-serif;
+    font-family: 'Ubuntu', sans-serif;
     
 }
 .cuerpo{
@@ -39,9 +43,9 @@
                 .logo{
                     background:transparent ;
                     flex: 0 1 auto;
-                    height: 150px;
-                    width: 150px;
-                    padding-top: 10px;
+                    height: 200px;
+                    width: 200px;
+                    padding-top: 30px;
                 }
                 .navegacion{
                     display: flex;
