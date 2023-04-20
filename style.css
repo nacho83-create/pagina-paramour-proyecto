@@ -43,11 +43,11 @@
                 .logo{
                     background:transparent ;
                     flex: 0 1 auto;
-                    height: 200px;
-                    width: 200px;
-                    padding-top: 30px;
+                    height: 300px;
+                    width: 300px;
+                    padding-top: 90px;
                 }
-                .navegacion{
+                /*.navegacion{
                     display: flex;
                     background:transparent ;
                     flex: 1 1 auto;
@@ -65,7 +65,7 @@
                         .navegacion a:hover{
                             color: rgb(218, 34, 172);
                             border-bottom: botton 4px solid transparent;
-                        }
+                        }*/
             .texto-principal{
                 background: transparent;
                 font-size: 30px;
@@ -259,13 +259,13 @@
         flex-direction: column;
         height: auto;
     }
-        .navegacion{
+        /*.navegacion{
             flex-direction: row;
             height: auto;
         }
             .navegacion a{
                 font-size: 23px;
-            }
+            }*/
         .texto-principal{
             background:transparent;
             padding-top: 50%;
@@ -343,6 +343,78 @@
     }
 }            
 
+html {
+    scroll-behavior: smooth;
+  }
+ 
+  .navegacion {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgb(37, 37, 37);
+    color: #fff;
+    z-index: 9999;
+    display: flex;
+    justify-content: flex-end;
+  }
+  
+  .navegacion ul {
+    display: flex;
+    justify-content: space-around;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+  
+  .navegacion li {
+    margin: 0 30px;
+    padding: 1em;
+  }
+  
+  .navegacion a {
+    color: #c0d9ee;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bolder;
+  }
+  
+  .navegacion a:hover {
+    color: #cfd8df;
+  }
+  
+  section {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .Biography-box h2, .Photos-box h2, .Videos-box h2 {
+    font-size: 4em;
+    margin-bottom: 0.5em;
+    text-align:left; 
+    color: rgb(54, 53, 53);
+  }
+  
+  .Biography-box p {
+      
+      width: 1100px; /* Ancho del cuadro */
+      margin: 0 auto; /* Centrar el cuadro en la página */
+      padding: 40px; /* Espaciado interno del cuadro */
+      border: 3px solid #424343; /* Borde del cuadro */
+      background-color: #f2f2f2cf; /* Color de fondo del cuadro */
+      border-radius: 20px;
+      column-count: 3;
+  }
+  
 
+    main {
+        background-image: radial-gradient( circle farthest-corner at 10% 20%,  rgb(236, 164, 232) 17.8%, rgb(84, 226, 231) 100.2% );
+      /* Establecer el fondo deseado */
+        background-repeat: no-repeat;
+        background-position: center center;
+        z-index: 1;
+       }
 
-
+       
