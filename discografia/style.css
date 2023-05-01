@@ -23,7 +23,10 @@
     flex-flow: column nowrap;
     transition: background-color 0.4s ease-in-out;
     }
-   
+    .cabecera-discografia{
+        background-color: black;
+    }
+        
 
     
         .seccion-1{
@@ -81,7 +84,12 @@
                             color: rgb(218, 34, 172);
                             border-bottom: botton 4px solid transparent; 
                         }
-        
+        .texto-discografia{
+            background-color: blueviolet;
+        }
+        .titular-discografia{
+            background-color: antiquewhite;
+        }
     
     .medio{
         background-color:transparent;  
@@ -95,7 +103,15 @@
         padding-bottom: 0%;
     }
                                         
-   
+    .medio-discografia{
+        background: black;
+        display: flex;
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: cover;
+
+
+    }
         .link-events-titular{
         background: transparent;
         display: flex;
@@ -129,8 +145,32 @@
             color: white;
             text-decoration: none;
         }        
-       
-       
+        .articulos-discografia{
+            background-color: antiquewhite;
+            flex: 2 1 auto;
+            display: flex;
+            flex-flow: row wrap;
+        }
+            .articulo-disco{
+                background-color: aqua;
+                flex: 1 1 100%;
+            }
+        .videos{
+            background-color: cornflowerblue;
+            flex: 1 1 auto;
+            flex-flow: row wrap;
+           
+        } 
+            .video1{
+            background-color: blue;
+            flex: 1 1 auto;
+            height: 40%;
+            }
+            .video2{
+            background-color: aquamarine;
+            flex: 1 1 auto;
+            height: 40%;
+            }      
         
     .pie-pagina{
     background-color: black;
