@@ -1,6 +1,6 @@
 *{
-    margin: 1px;
-    padding: 2px;
+    margin: 0px;
+    padding: 0px;
     box-sizing: border-box;
     font-family: 'Dosis', sans-serif;
     font-family: 'Maven Pro', sans-serif;
@@ -10,166 +10,111 @@
     
 }
 .cuerpo{
-    background-color: black;
+    background-color: rgb(12, 12, 12);
     display: flex;
     flex-flow: column nowrap;
 }
-    .cabecera{
-    background-image: url(imagenes/fondoCabecera.jpg);
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    display: flex;
-    flex-flow: column nowrap;
-    transition: background-color 0.4s ease-in-out;
-    }
     .cabecera-discografia{
         background-color: black;
+        display: flex;
     }
         
-
-    
-        .seccion-1{
+       .seccion{
             background: transparent;
+            padding:0px;
+
         }
             .menu{
                 background: transparent;
                 display: flex;
                 flex-flow: row nowrap;
-                height: 100px;
+                height: auto;
                 align-items: center;
             }
-                
-                .logo{
-                    background: transparent ;
-                    flex: 0 1 auto;
-                    height: 300px;
-                    width: 300px;
-                    padding-top: 90px;
+                .imagen-fondo{
+                    width: auto;
                 }
-               
-            .texto-principal{
-                background: transparent;
-                font-size: 30px;
-
-            }
-                .titular{
-                    background: transparent;
+                .navegacion {
+                    position:fixed;
+                    top: 0;
+                    left: 0;
+                    width: 100%;
+                    background: linear-gradient(rgba(179, 173, 175, 0.75), rgba(71, 61, 65, 0.75)) transparent;
+                    color: #fff;
                     display: flex;
-                    justify-content: left;
-                    text-align: left;
-                    padding-right: 65%;
-                    padding-top: 20%;
+                    justify-content: flex-end;
                 }
-                    .titular h1{
-                        color: rgb(5, 160, 250);
-                        text-decoration: none;
-                    }
-                    .spicyPink{
-                        color: rgb(218, 34, 172);
-                    }
-                      
-                .botones{
-                    background:transparent;
-                    text-align: center;
-                    font-size: 40px;
-                    padding: 10% 73% 20% 0%;
+              
+                .navegacion ul {
+                    display: flex;
+                    justify-content: space-around;
+                    margin: 0;
+                    padding: 0;
+                    list-style: none;
                 }
-                    .botones a{
-                        color: rgb(5, 160, 250);
-                        text-decoration: none;
-                    
-                    }
-                        .botones a:hover{
-                            color: rgb(218, 34, 172);
-                            border-bottom: botton 4px solid transparent; 
-                        }
-        .texto-discografia{
+              
+                .navegacion li {
+                    margin: 0 30px;
+                    padding: 1em;
+                }
+              
+                .navegacion a {
+                    color: #c0d9ee;
+                    text-decoration: none;
+                    font-size: 18px;
+                    font-weight: bolder;
+                }
+              
+                .navegacion a:hover {
+                    color: #cfd8df;
+                }
+              
+                
+       .texto-discografia{
             background-color: blueviolet;
+            padding: 70px;
         }
         .titular-discografia{
             background-color: antiquewhite;
+            padding: 70px;
         }
     
-    .medio{
-        background-color:transparent;  
-        display: flex;
-        background-position: center center;
-        background-repeat: no-repeat;
-        background-size: cover;
-        flex-flow: column;
-        align-items: center;
-        padding-top: 0%;
-        padding-bottom: 0%;
-    }
                                         
     .medio-discografia{
-        background: black;
+        background: rgb(236, 5, 5);
         display: flex;
         background-position: center center;
         background-repeat: no-repeat;
         background-size: cover;
-
-
-    }
-        .link-events-titular{
-        background: transparent;
-        display: flex;
-        flex-flow: column;
-        font-size: 100px;
-        }
-            .subtitle{
-            background: transparent;
-            display: flex;
-            flex-flow: column;
-            }
-                .subtitle p{
-                    font-size: 50px ;
-                    color: white;
-                    text-decoration: none;
-                }
-    .articulos{
-        background-image:linear-gradient(rgba(5, 7, 12, 0.75), rgba(5, 7, 12, 0.75)),url(imagenes/main.jpg);
         width: 100%;
-        height: auto;
-        padding-top:20%;
-        padding-bottom: 20%;
-        background-position: center center;
-        background-repeat: no-repeat;
-        background-size: cover;
-        display: flex;
-        flex-flow: column nowrap;
-        align-items: center;
-    }            
-        .articulos a{
-            color: white;
-            text-decoration: none;
-        }        
+    }
+       
         .articulos-discografia{
             background-color: antiquewhite;
             flex: 2 1 auto;
             display: flex;
             flex-flow: row wrap;
+            padding: 50px;
         }
             .articulo-disco{
                 background-color: aqua;
                 flex: 1 1 100%;
+                padding: 20px;
             }
         .videos{
             background-color: cornflowerblue;
             flex: 1 1 auto;
             flex-flow: row wrap;
-           
         } 
             .video1{
             background-color: blue;
             flex: 1 1 auto;
-            height: 40%;
+            height: 20%;
             }
             .video2{
             background-color: aquamarine;
             flex: 1 1 auto;
-            height: 40%;
+            height: 20%;
             }      
         
     .pie-pagina{
@@ -240,230 +185,11 @@
                 .boton-footer span{
                     opacity: 0.5;
                 }
-@media all and (max-width: 600px){
-    .cabecera{
-        background-image: linear-gradient(rgba(20, 7, 12, 0.75), rgba(20, 7, 12, 0.75)),url(imagenes/fondo.jpg);
-        background-position: center center;
-        background-repeat: no-repeat;
-        background-size: cover;
-        display: flex;
-        flex-flow: column nowrap;
-        height: auto;
-       
-    }    
-    .menu{
-        flex-direction:column;
-        height: auto;
-    }
-    .logo{
-        background: transparent ;
-        flex: auto;
-        height: 230px;
-        width: 300px;
-        padding-top: 0px;
-    }
-    
-
-    .navegacion{
-            flex-direction: column;
-            height: auto;
-        }
-            .navegacion ul {
-                flex-direction: column;
-                background-color:transparent;
-                display: flex;
-                align-items:flex-end;
-                list-style: none;
-
-            }
-            .navegacion li{
-                background:transparent;
-                align-items: center;
-                padding : auto ;
-            }
-            .navegacion li a {
-                background:transparent;
-                font-size: 15px;
-                margin: 0px;
-                padding: 0px;
-                justify-content:center;
-            }
-        .texto-principal{
-            background:transparent;
-            padding-top: 50%;
-        }    
-        .titular{
-            background: transparent;
-            padding: 0;
-            
-        }
-            .titular h1{
-                font-size: 33px;
-                text-align:center;
-            }
-        
-        .botones{
-            background: transparent ;
-            padding: 20px;
-
-        }
-            .botones a{
-                background: transparent;
-                font-size: 25px;
-            }   
-                    
-    .medio{
-        flex-direction: column;
-        height: auto;
-    }
-        .articulos{
-             text-align: center;
-        }
-        .link-events-titular{
-            font-size: 60px;
-        }
-        .subtitle p{
-            font-size: 40px;
-        }
-        .Biography-box b{
-            font-size: 15px;
-        }
-        .Biography-box p{
-            font-size: 13px;
-        }
-        
-    .pie-pagina{
-        flex-direction: column;
-        height: auto;
-    }
-        .titulo-banda{
-            font-size: 20px;
-        }
-        .contactos p{
-            font-size:15px;
-        }
-        .redes-sociales a{
-            display: block;
-            padding: 0px 0px;
-            background-color: rgb(36, 37, 37);
-            color: aliceblue;
-            line-height: 7px;
-            font-size: 15px;
-            box-shadow: 0px 6px 6px 0 rgba(36, 37, 37, 0.75);
-            transition: .2s;
-        }
-        .boton-footer p{
-            font-size: 10px;
-        }
-}
-@media all and (max-width: 900px){
-    .cabecera{
-        background-position: center center;
-        background-repeat: no-repeat;
-        background-size: cover;
-        display: flex;
-        flex-flow: column nowrap;
-
-    }
-   
-    
-    .Biography-box p{
-      
-        width: auto; /* Ancho del cuadro */
-        margin: 0 auto; /* Centrar el cuadro en la página */
-        padding: 8px; /* Espaciado interno del cuadro */
-        border: 2px solid #424343; /* Borde del cuadro */
-        background-color: #f2f2f2cf; /* Color de fondo del cuadro */
-        border-radius: 10px;
-        
-    }
-    
-    
-    .menu{
-        flex-direction:column;
-        height: auto;
-        width: auto;
-    }
-        .navegacion{
-            width:auto;
-            justify-content: center;
-        }
-    .medio{
-        flex-direction: column;
-        height: auto;   
-    }
-}            
+          
 
 html {
     scroll-behavior: smooth;
   }
  
-  .navegacion {
-    position:fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    background: linear-gradient(rgba(179, 173, 175, 0.75), rgba(71, 61, 65, 0.75)) transparent;
-    /*background-color: rgb(71, 68, 68);*/
-    color: #fff;
-    z-index: 9999;
-    display: flex;
-    justify-content: flex-end;
-  }
   
-  .navegacion ul {
-    display: flex;
-    justify-content: space-around;
-    margin: 0;
-    padding: 0;
-    list-style: none;
-  }
-  
-  .navegacion li {
-    margin: 0 30px;
-    padding: 1em;
-  }
-  
-  .navegacion a {
-    color: #c0d9ee;
-    text-decoration: none;
-    font-size: 18px;
-    font-weight: bolder;
-  }
-  
-  .navegacion a:hover {
-    color: #cfd8df;
-  }
-  
-  .Biography-box h2, .Photos-box h2, .Videos-box h2 {
-    background-color: transparent;
-    font-size: 50px;
-    margin-bottom: 10px;
-    text-align:center; 
-    color: rgb(54, 53, 53);
-  }
-  
-  .Biography-box p {
-      width: auto; /* Ancho del cuadro */
-      margin: auto; /* Centrar el cuadro en la página */
-      padding: 40px; /* Espaciado interno del cuadro */
-      border: 3px solid #424343; /* Borde del cuadro */
-      background-color: #e6dee4ee; /* Color de fondo del cuadro */
-      border-radius: 30px;
-      column-count: 3;
-  }
-  
-
-    .Biography-1{
-        justify-content: center;
-        padding-top: 2%;
-        background-color:transparent;
-        flex-direction: column;
-        background-image: radial-gradient( circle farthest-corner at 10% 20%,  rgb(236, 164, 232) 17.8%, rgb(84, 226, 231) 100.2% );
-        /* Establecer el fondo deseado */
-        background-repeat: no-repeat;
-        background-position: center center;
-       
-       }
-
-       
+ 
