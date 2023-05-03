@@ -1,6 +1,6 @@
 *{
-    margin: 1px;
-    padding: 2px;
+    margin: 0px;
+    padding: 0px;
     box-sizing: border-box;
     font-family: 'Dosis', sans-serif;
     font-family: 'Maven Pro', sans-serif;
@@ -44,6 +44,40 @@
                     width: 300px;
                     padding-top: 90px;
                 }
+                .navegacion {
+                    position:fixed;
+                    top: 0;
+                    left: 0;
+                    width: 100%;
+                    background: linear-gradient(rgba(179, 173, 175, 0.75), rgba(71, 61, 65, 0.75)) transparent;
+                    color: #fff;
+                    display: flex;
+                    justify-content:flex-end;
+                  }
+                  
+                  .navegacion ul {
+                    display: flex;
+                    margin: 0;
+                    padding: 0px;
+                    list-style: none;
+                  }
+                  
+                  .navegacion li {
+                    margin: 0 70px;
+                    padding: 1em;
+                  }
+                  
+                  .navegacion a {
+                    color: #c0d9ee;
+                    text-decoration: none;
+                    font-size: 18px;
+                    font-weight: bolder;
+                  }
+                  
+                  .navegacion a:hover {
+                    color: #cfd8df;
+                  }
+                
                
             .texto-principal{
                 background: transparent;
@@ -51,7 +85,7 @@
 
             }
                 .titular{
-                    background: transparent;
+                    background:transparent;
                     display: flex;
                     justify-content: left;
                     text-align: left;
@@ -59,6 +93,9 @@
                     padding-top: 20%;
                 }
                     .titular h1{
+                        background:transparent;
+                        font-size: 60px;
+                        padding-left: 25px;
                         color: rgb(5, 160, 250);
                         text-decoration: none;
                     }
@@ -67,15 +104,16 @@
                     }
                       
                 .botones{
-                    background:transparent;
-                    text-align: center;
+                    background: transparent;
+                    text-align:left;
                     font-size: 40px;
-                    padding: 10% 73% 20% 0%;
+                    padding: 18% 60% 15% 0%;
                 }
                     .botones a{
+                        background:transparent;
                         color: rgb(5, 160, 250);
                         text-decoration: none;
-                    
+                        padding: 20px;
                     }
                         .botones a:hover{
                             color: rgb(218, 34, 172);
@@ -112,6 +150,38 @@
                     color: white;
                     text-decoration: none;
                 }
+    .Biography-box h2 {
+        background-color: transparent;
+        font-size: 50px;
+        padding-top: 0%;
+        padding-bottom: 10% ;
+        margin-bottom: 0px;
+        text-align:center; 
+        color: rgb(54, 53, 53);
+        }
+                  
+            .Biography-box p {
+                width: auto; /* Ancho del cuadro */
+                margin: auto; /* Centrar el cuadro en la página */
+                padding: 50px 30px; /* Espaciado interno del cuadro */
+                border: 3px solid #424343; /* Borde del cuadro */
+                background-color: #e6dee4ee; /* Color de fondo del cuadro */
+                border-radius: 30px;
+                column-count: 3;
+                }
+                  
+                
+                .Biography-1{
+                    justify-content: center;
+                    padding: 5% 4%;
+                    background-color:transparent;
+                    flex-direction: column;
+                    background-image: radial-gradient( circle farthest-corner at 10% 20%,  rgb(236, 164, 232) 17.8%, rgb(84, 226, 231) 100.2% );
+                    background-repeat: no-repeat;
+                    background-position: center center;
+                       
+                }   
+                            
     .articulos{
         background-image:linear-gradient(rgba(5, 7, 12, 0.75), rgba(5, 7, 12, 0.75)),url(imagenes/main.jpg);
         width: 100%;
@@ -129,7 +199,6 @@
             color: white;
             text-decoration: none;
         }        
-       
        
         
     .pie-pagina{
@@ -218,7 +287,7 @@
     .logo{
         background: transparent ;
         flex: auto;
-        height: 230px;
+        height: 200px;
         width: 300px;
         padding-top: 0px;
     }
@@ -263,12 +332,13 @@
             }
         
         .botones{
-            background: transparent ;
-            padding: 20px;
+            background:transparent ;
+            padding: 10% 10% 10% 30%;
+            flex-direction: row;
 
         }
             .botones a{
-                background: transparent;
+                background:transparent;
                 font-size: 25px;
             }   
                     
@@ -325,7 +395,37 @@
         flex-flow: column nowrap;
 
     }
-   
+    .menu{
+        flex-direction:column;
+        height: auto;
+        width: auto;
+    }
+    .navegacion{
+        width:100%;
+        justify-content: center;
+    }
+        .navegacion li a {
+            background:transparent;
+            font-size: 15px;
+            margin: 0px;
+            padding: 0px;
+            justify-content:center;
+        }
+        .navegacion ul {
+            display: flex;
+            margin: 0;
+            padding: 0px;
+            list-style: none;
+          }
+          
+          .navegacion li {
+            margin: 0 30px;
+            padding: 1em;
+          }
+    .medio{
+        flex-direction: column;
+        height: auto;   
+    }
     
     .Biography-box p{
       
@@ -339,91 +439,16 @@
     }
     
     
-    .menu{
-        flex-direction:column;
-        height: auto;
-        width: auto;
-    }
-        .navegacion{
-            width:auto;
-            justify-content: center;
-        }
-    .medio{
-        flex-direction: column;
-        height: auto;   
-    }
+   
+   
 }            
 
 html {
     scroll-behavior: smooth;
-  }
+}
  
-  .navegacion {
-    position:fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    background: linear-gradient(rgba(179, 173, 175, 0.75), rgba(71, 61, 65, 0.75)) transparent;
-    /*background-color: rgb(71, 68, 68);*/
-    color: #fff;
-    z-index: 9999;
-    display: flex;
-    justify-content: flex-end;
-  }
   
-  .navegacion ul {
-    display: flex;
-    justify-content: space-around;
-    margin: 0;
-    padding: 0;
-    list-style: none;
-  }
   
-  .navegacion li {
-    margin: 0 30px;
-    padding: 1em;
-  }
-  
-  .navegacion a {
-    color: #c0d9ee;
-    text-decoration: none;
-    font-size: 18px;
-    font-weight: bolder;
-  }
-  
-  .navegacion a:hover {
-    color: #cfd8df;
-  }
-  
-  .Biography-box h2, .Photos-box h2, .Videos-box h2 {
-    background-color: transparent;
-    font-size: 50px;
-    margin-bottom: 10px;
-    text-align:center; 
-    color: rgb(54, 53, 53);
-  }
-  
-  .Biography-box p {
-      width: auto; /* Ancho del cuadro */
-      margin: auto; /* Centrar el cuadro en la página */
-      padding: 40px; /* Espaciado interno del cuadro */
-      border: 3px solid #424343; /* Borde del cuadro */
-      background-color: #e6dee4ee; /* Color de fondo del cuadro */
-      border-radius: 30px;
-      column-count: 3;
-  }
-  
-
-    .Biography-1{
-        justify-content: center;
-        padding-top: 2%;
-        background-color:transparent;
-        flex-direction: column;
-        background-image: radial-gradient( circle farthest-corner at 10% 20%,  rgb(236, 164, 232) 17.8%, rgb(84, 226, 231) 100.2% );
-        /* Establecer el fondo deseado */
-        background-repeat: no-repeat;
-        background-position: center center;
-       
-       }
+ 
 
        
