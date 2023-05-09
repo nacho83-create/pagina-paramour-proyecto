@@ -165,11 +165,12 @@
 
                   
             .Biography-box p {
-                width: auto; /* Ancho del cuadro */
-                margin: auto; /* Centrar el cuadro en la página */
-                padding: 50px 30px; /* Espaciado interno del cuadro */
-                border: 3px solid #424343; /* Borde del cuadro */
-                background-color: #e6dee4ee; /* Color de fondo del cuadro */
+                width: auto; 
+                margin: auto; 
+                font-size: 20px;
+                padding: 80px 40px; 
+                border: 3px solid #424343; 
+                background-color: #e6dee4ee; 
                 border-radius: 30px;
                 column-count: 3;
                 }

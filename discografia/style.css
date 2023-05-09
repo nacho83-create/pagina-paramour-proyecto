@@ -80,10 +80,10 @@
         }
             .texto-discografia{
                 justify-content: center;
-                padding: 5% 4%;
+                padding: 8% 4%;
                 background-color:transparent;
                 flex-direction: column;
-                background-image: radial-gradient( circle farthest-corner at 10% 20%,  rgb(236, 164, 232) 17.8%, rgb(84, 226, 231) 100.2% );
+                background-image: radial-gradient( circle farthest-corner at 10% 20%,  rgb(3, 3, 3) 17.8%, rgb(70, 5, 67) 100.2% );
                 background-repeat: no-repeat;
                 background-position: center center;
                 
@@ -91,7 +91,7 @@
             
             .texto-discografia h1{
                 background:transparent;
-                color: rgb(218, 34, 172);
+                color: rgb(97, 3, 92);
                 font-size: 50px;
                 display:flex;
                 justify-content: center;
@@ -101,11 +101,12 @@
             padding: 0px;
         }
             .titular-discografia p {
-                width: auto; /* Ancho del cuadro */
-                margin: auto; /* Centrar el cuadro en la página */
-                padding: 50px 30px; /* Espaciado interno del cuadro */
-                border: 3px solid #424343; /* Borde del cuadro */
-                background-color: #e6dee4ee; /* Color de fondo del cuadro */
+                width: auto; 
+                margin: auto;
+                font-size: 20px; 
+                padding: 80px 40px; 
+                border: 3px solid #424343; 
+                background-color: #aaa4a9ee; 
                 border-radius: 30px;
                 column-count: 3;
             }
@@ -133,7 +134,7 @@
            
            
             .articulo-disco1{
-                background-image:linear-gradient(rgba(7, 7, 7, 0.75), rgba(164, 20, 177, 0.808)), url(/imagenes/disco1.png) ;
+                background-image:linear-gradient(rgba(7, 7, 7, 0.75), rgba(70, 5, 67, 0.808)), url(/imagenes/disco1.png) ;
                 background-position: center center;
                 background-repeat: no-repeat;
                 background-size: 100%;
@@ -180,7 +181,7 @@
 
             .articulo-disco2{
                 background:transparent;
-                background-image:linear-gradient(rgba(7, 7, 7, 0.75), rgba(164, 20, 177, 0.808)), url(/imagenes/disco2.png) ;
+                background-image:linear-gradient(rgba(7, 7, 7, 0.75), rgba(70, 5, 67, 0.808)), url(/imagenes/disco2.png) ;
                 background-position: center center;
                 background-repeat: no-repeat;
                 background-size: 100%;
@@ -227,7 +228,7 @@
             
             .articulo-disco3{
                 background:transparent;
-                background-image:linear-gradient(rgba(7, 7, 7, 0.75), rgba(164, 20, 177, 0.808)), url(/imagenes/disco3.png) ;
+                background-image:linear-gradient(rgba(7, 7, 7, 0.75), rgba(70, 5, 67, 0.808)), url(/imagenes/disco3.png) ;
                 background-position: center center;
                 background-repeat: no-repeat;
                 background-size: 100%;
@@ -272,7 +273,7 @@
                 } 
             .articulo-disco4{
                 background:transparent;
-                background-image:linear-gradient(rgba(7, 7, 7, 0.75), rgba(164, 20, 177, 0.808)), url(/imagenes/disco4.png) ;
+                background-image:linear-gradient(rgba(7, 7, 7, 0.75), rgba(70, 5, 67, 0.808)), url(/imagenes/disco4.png) ;
                 background-position: center center;
                 background-repeat: no-repeat;
                 background-size: 100%;
