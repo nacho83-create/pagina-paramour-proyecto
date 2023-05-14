@@ -186,12 +186,19 @@
                     background-position: center center;
                        
                 }   
-                            
+    .formulario{
+        max-width: 70%;
+        padding: 5%;
+        margin: 0 auto;
+        font-weight: bold;
+        border-radius: 2%;
+        box-shadow: inset 1px 1px 22px 4px rgb(34, 33, 33);
+    }                        
     .articulos{
         background-image:linear-gradient(rgba(5, 7, 12, 0.75), rgba(5, 7, 12, 0.75)),url(imagenes/main.jpg);
         width: 100%;
         height: auto;
-        padding-top:20%;
+        padding-top:10%;
         padding-bottom: 20%;
         background-position: center center;
         background-repeat: no-repeat;
@@ -203,7 +210,15 @@
         .articulos a{
             color: white;
             text-decoration: none;
-        }        
+        }
+        
+        .proximo-recital{
+            width: 60%;
+            margin: 2%;
+            padding: 2%;
+            border-radius: 2%;
+            box-shadow: inset 1px 1px 22px 4px rgb(34, 33, 33);
+        }
     .pie-pagina{
         background-color: rgb(10, 10, 10);
         display: flex;
