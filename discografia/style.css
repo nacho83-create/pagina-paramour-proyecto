@@ -65,40 +65,42 @@
                         transform: scale(1.8);
                     
                     }
-                .navegacion {
-                    position:fixed;
-                    top: 0;
-                    left: 0;
-                    width: 100%;
-                    background: linear-gradient(rgba(179, 173, 175, 0.75), rgba(71, 61, 65, 0.75)) transparent;
-                    color: #fff;
-                    display: flex;
-                    justify-content:flex-end;
-                }
-                  
-                    .navegacion ul {
+                    .navegacion {
+                        position:fixed;
+                        top: 0;
+                        left: 0;
+                        width: 100%;
+                        background: linear-gradient(rgba(153, 95, 115, 0.75), rgba(71, 61, 65, 0.75)) transparent;
+                        color: #fff;
+                        display: flex;
+                        justify-content:flex-end;
+                    }
+                      
+                        .navegacion ul {
                         display: flex;
                         margin: 0;
                         padding: 0px;
                         list-style: none;
-                    }
-                  
-                    .navegacion li {
-                        margin: 0 70px;
-                        padding: 1em;
-                    }
-                  
-                    .navegacion a {
+                        }
+                      
+                        .navegacion li {
+                        margin: 0 50px;
+                        padding: 2em;
+                        }
+                      
+                        .navegacion a {
                         color: #c0d9ee;
                         text-decoration: none;
                         font-size: 18px;
-                        font-family: 'Ubuntu', sans-serif;
+                        font-family: 'Noto Sans', sans-serif;
                         font-weight: bolder;
-                    }
-                  
-                    .navegacion a:hover {
-                        color: #cfd8df;
-                    }
+                        }
+                      
+                        .navegacion a:hover {
+                        color: rgb(248, 101, 211);
+                        border-bottom: botton 4px solid transparent; 
+                        
+                        }
             
        .texto-discografia{
             background:transparent;
@@ -125,6 +127,7 @@
                 background:transparent;
                 color: rgb(97, 3, 92);
                 font-size: 50px;
+                padding-bottom: 5%;
                 font-family:'Ubuntu', sans-serif ;
                 display:flex;
                 justify-content: center;
@@ -361,6 +364,7 @@
 
         .videos{
             width: 8%;
+            height: auto;
             background:transparent;
             flex: auto;
             flex-flow: row;
@@ -369,114 +373,116 @@
             .video1{
                 background:transparent;
                 flex: 1 1 auto;
-                height:25% ;
+                height:23% ;
+
             }
             .video2{
                 background:transparent;
                 flex: 1 1 auto;
-                height:25% ;
+                height:23% ;
             }
             .video3{
                 background:transparent;
                 flex: 1 1 auto;
-                height:25% ;
+                height:24% ;
             }
             .video4{
                 background:transparent;
                 flex: 1 1 auto;
-                height:25% ;
+                height:23% ;
             }
 
-        
-    .pie-pagina{
-    background-color: rgb(10, 10, 10);
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    width: 100%;
-    padding-bottom:0px;
-    }
-        .contenido-footer{
-            background:transparent;
-            width: 100%;
-            display: flex;
-            flex-wrap: wrap;
-            flex-direction: column;  
-        }
-            .contactos{
-                background:transparent;
+            .pie-pagina{
+                background-color: rgb(10, 10, 10);
                 display: flex;
                 flex-direction: column;
-            }
-                .titulo-banda{
-                    display: flex;
-                    justify-content: center;
-                    font-size: 45px;
-                    font-family: 'Ubuntu', sans-serif;
-                    color: white;
-                }
-                .contactos p{
-                    display: flex;
-                    justify-content: center;
-                    padding-top: 10px;
-                    font-size: 25px;
-                    font-family:'Ubuntu', sans-serif ;
-                    color: white;
-                }
-                .contactos h2{
-                    padding-top: 5%;
-                }
-            .redes-sociales{
-                background:transparent;
-                display: flex;
                 justify-content: center;
-                padding-top: 50px;
-            }
-                .redes-sociales a{
-                    display: block;
-                    padding: 0px 0px;
-                    background-color: rgb(36, 37, 37);
-                    color: aliceblue;
-                    line-height: 10px;
-                    font-size: 35px;
-                    font-family: 'Ubuntu', sans-serif;
-                    box-shadow: 0px 6px 6px 0 rgba(36, 37, 37, 0.75);
-                    transition: .2s;
-                }
-                .redes-sociales a:hover{
-                    filter: blur(1.5px);
-                }
-               
-                .social-media-icons i{
-                    margin:10px 10px;
-                    text-decoration: none;
-                    color: azure;
-                }
-                .social-media-icons:hover i{
-                    color:rgb(218, 34, 172) ;
-                }
-            .boton-footer{
                 width: 100%;
-                height:20% ;
-                padding-top: 150px;
-                background:transparent;
-                display: flex;
-                justify-content:center;
-                flex-direction: row;
-                flex-wrap: wrap;
-
-            }
-                .boton-footer p{
-                    font-size: 15px;
-                    font-family:'Ubuntu', sans-serif ;
-                    color: aliceblue;
-                }
-                .boton-footer span{
-                    font-family:'Ubuntu', sans-serif ;
-                    opacity: 0.5;
-                }
-          
-
+                padding-bottom:0px;
+                 }
+                    .contenido-footer{
+                        background:transparent;
+                        width: 100%;
+                        display: flex;
+                        flex-wrap: wrap;
+                        flex-direction: column;  
+                        }
+                            .contactos{
+                                background:transparent;
+                                display: flex;
+                                flex-direction: column;
+                            }
+                                .titulo-banda{
+                                    display: flex;
+                                    justify-content: center;
+                                    font-size: 45px;
+                                    color: white;
+                                }
+                                .contactos h2{
+                                    padding-top: 5%;
+                                    font-family: 'Noto Sans', sans-serif;
+                                }
+                                
+                                .contactos p{
+                                    display: flex;
+                                    justify-content: center;
+                                    padding-top: 10px;
+                                    font-size: 25px;
+                                    font-family: 'Noto Sans', sans-serif;
+                                    color: white;
+                                }
+                            .redes-sociales{
+                                background:transparent;
+                                display: flex;
+                                justify-content: center;
+                                padding-top: 50px;
+                            }
+                                .redes-sociales a{
+                                    display: block;
+                                    padding: 0px 0px;
+                                    background-color: rgb(36, 37, 37);
+                                    color: aliceblue;
+                                    line-height: 10px;
+                                    font-size: 35px;
+                                    font-family: 'Noto Sans', sans-serif;
+                                    box-shadow: 0px 6px 6px 0 rgba(36, 37, 37, 0.75);
+                                    transition: .2s;
+                                }
+                                .redes-sociales a:hover{
+                                    filter: blur(1.5px);
+                                }
+                               
+                                .social-media-icons i{
+                                    margin:10px 10px;
+                                    text-decoration: none;
+                                    color: azure;
+                                }
+                                .social-media-icons:hover i{
+                                    color:rgb(218, 34, 172) ;
+                                }
+                            .boton-footer{
+                                width: 100%;
+                                height:20% ;
+                                padding-top: 150px;
+                                background:transparent;
+                                display: flex;
+                                justify-content:center;
+                                flex-direction: row;
+                                flex-wrap: wrap;
+                
+                            }
+                                .boton-footer p{
+                                    font-size: 15px;
+                                    font-family: 'Noto Sans', sans-serif;
+                                    color: aliceblue;
+                                }
+                                .boton-footer span{
+                                    opacity: 0.5;
+                                    font-family: 'Noto Sans', sans-serif;
+                                }
+                             
+               
+    
 html {
     scroll-behavior: smooth;
 }
