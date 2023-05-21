@@ -23,7 +23,8 @@
                     <img src="imagenes/logo.png" class="logo" alt="rock banda">    
                 </div>
             </div>        
-            <nav id="nav" class="navegacion"> 
+            <nav id="nav" class="navegacion">
+                
                 <ul>
                     <li><a href="index.html">Home</a></li>
                     <li><a href="#Biography">Biography</a></li>
@@ -76,23 +77,31 @@
             <section class="container" id="contact">
                 <div class="row my-5">
                     <div class="col-sm-12 col-md-12 col-lg-12">
-                        <form action="" method="post" class="formulario">
+                        <form action="" method="post" class="formulario" id="form">
                             <h3 class="display-4 text-black text-center">CONTACT FORM</h3>
                             <div class="form-group">
                                 <label for="">Name:</label>
-                                <input type="text"placeholder="Enter Full Name" maxlength="25" id="nombre" name="nombre" class="form-control">
+                                <input type="text"placeholder="Enter Full Name"  id="nombre" name="nombre" class="form-control">
+                            </div>
+                            <div class="form-group">
+                                <label for="">UserName:</label>
+                                <input type="text"placeholder="Enter Full UserName"  id="apellido" name="apellido" class="form-control">
                             </div>
                             <div class="form-group">
                                 <label for="">Phone:</label>
-                                <input type="text"placeholder="Enter Full Phone Number" maxlength="25" id="telefono" name="telefono" class="form-control">
+                                <input type="text"placeholder="Enter xxx xxxx xxxxxx"  id="telefono" name="telefono" class="form-control">
+                            </div>
+                            <div class="form-group">
+                                <label for="">Email:</label>
+                                <input type="text"placeholder="Enter Email"  id="email" name="email" class="form-control">
                             </div>
                             <div class="form-group">
                                 <label for="">Address:</label>
-                                <input type="text"placeholder="Enter Full Address" maxlength="25" id="direccion" name="direccion" class="form-control">
+                                <input type="text"placeholder="Enter Full Address"  id="direccion" name="direccion" class="form-control">
                             </div>
                             <div class="form-group">
                                 <label for="">Province / Country:</label>
-                                <input type="text"placeholder="Enter Province and Country" maxlength="25" id="direccion" name="direccion" class="form-control">
+                                <input type="text"placeholder="Enter Province and Country"  id="lugar" name="lugar" class="form-control">
                             </div>
                             <div class="form-group">
                                 <label for="">Reason Of Contact:</label>
@@ -111,9 +120,8 @@
                                 <input type="file" class="form-control"> 
                             </div>
                             <div class="form-group">
-                                <button type="submit" class="btn btn-primary">Keep</button>
                                 <button type="submit" class="btn btn-success">Send</button>
-                                <button type="submit" class="btn btn-danger">Cancel</button>
+                                <p class="warnings" id="warnings"></p>
                             </div>
                                    
                         </form>

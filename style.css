@@ -41,16 +41,16 @@
                 .logo{
                     background: transparent ;
                     flex: 0 1 auto;
-                    height: 300px;
-                    width: 300px;
-                    padding-top: 90px;
+                    height: 290px;
+                    width: 290px;
+                    padding-top: 100px;
                 }
                 .navegacion {
                     position:fixed;
                     top: 0;
                     left: 0;
                     width: 100%;
-                    background: linear-gradient(rgba(153, 95, 115, 0.75), rgba(71, 61, 65, 0.75)) transparent;
+                    background: linear-gradient(rgba(236, 164, 232, 0.95), rgba(84, 226, 231, 0.95)) transparent;
                     color: #fff;
                     display: flex;
                     justify-content:flex-end;
@@ -69,15 +69,15 @@
                     }
                   
                     .navegacion a {
-                    color: #c0d9ee;
+                    color: #0a0a0a;
                     text-decoration: none;
-                    font-size: 18px;
+                    font-size: 20px;
                     font-family: 'Noto Sans', sans-serif;
                     font-weight: bolder;
                     }
                   
                     .navegacion a:hover {
-                    color: rgb(248, 101, 211);
+                    color: rgb(218, 34, 172);
                     border-bottom: botton 4px solid transparent; 
                     
                     }
@@ -172,7 +172,7 @@
                 font-size: 20px;
                 padding: 5% 5%; 
                 border: 3px solid #424343; 
-                background-color: #e6dee4ee; 
+                background-color: #b8afb5ee; 
                 border-radius: 30px;
                 column-count: 3;
             }
@@ -198,7 +198,15 @@
         font-weight: bold;
         border-radius: 2%;
         box-shadow: inset 1px 1px 22px 4px rgb(34, 33, 33);
-    }                        
+    }
+        
+        .warnings{
+            width: 200px;
+            text-align: center;
+            margin: auto;
+            color: red;
+            padding-top: 20px;
+        }                        
     .articulos{
         background-image:linear-gradient(rgba(5, 7, 12, 0.75), rgba(5, 7, 12, 0.75)),url(imagenes/main.jpg);
         width: 100%;
@@ -246,13 +254,14 @@
             background-color: rgb(159, 210, 240);;
         }  
     .pie-pagina{
-        background-color: rgb(10, 10, 10);
+        background-color: black;
         display: flex;
         flex-direction: column;
         justify-content: center;
         width: 100%;
-        padding-bottom:0px;
-         }
+        padding-bottom:1%;
+        font-family: 'Noto Sans', sans-serif;
+    }
             .contenido-footer{
                 background:transparent;
                 width: 100%;
@@ -266,38 +275,50 @@
                         flex-direction: column;
                     }
                         .titulo-banda{
+                            background: transparent;
                             display: flex;
+                            margin: 1%;
+                            padding-top: 5%;
                             justify-content: center;
                             font-size: 45px;
+                            font-weight: 100;
                             color: white;
+                            font-family: 'Raleway', sans-serif;
                         }
                         .contactos h2{
-                            padding-top: 5%;
-                            font-family: 'Noto Sans', sans-serif;
+                            color:rgba(84, 226, 231, 2) ;
+                            font-size: 50px;
+                            font-weight: bolder;
+                        }
+                        .contactos h2:hover{
+                            color:#fff;
+                            text-shadow: 0 0 5px rgba(84, 226, 231, 2),
+                            0 0 20px rgba(84, 226, 231, 2),
+                            0 0 40px rgba(84, 226, 231, 2),
+                            0 0 100px rgba(84, 226, 231, 2);
+                
                         }
                         
                         .contactos p{
                             display: flex;
                             justify-content: center;
                             padding-top: 10px;
-                            font-size: 25px;
-                            font-family: 'Noto Sans', sans-serif;
+                            font-size: 25px;    
                             color: white;
                         }
                     .redes-sociales{
                         background:transparent;
                         display: flex;
                         justify-content: center;
-                        padding-top: 50px;
+                        padding-top: 3%;
                     }
                         .redes-sociales a{
                             display: block;
                             padding: 0px 0px;
                             background-color: rgb(36, 37, 37);
-                            color: aliceblue;
+                            color: white;
                             line-height: 10px;
-                            font-size: 35px;
-                            font-family: 'Noto Sans', sans-serif;
+                            font-size: 35px;  
                             box-shadow: 0px 6px 6px 0 rgba(36, 37, 37, 0.75);
                             transition: .2s;
                         }
@@ -331,6 +352,13 @@
                         .boton-footer span{
                             opacity: 0.5;
                         }
+                        .boton-footer span:hover{
+                            color:#fff;
+                            text-shadow: 0 0 5px rgb(223, 44, 199),
+                            0 0 20px rgb(252, 5, 219),
+                            0 0 40px rgb(223, 44, 199),
+                            0 0 300px rgb(223, 44, 199);
+                        }
                      
    
     
@@ -360,6 +388,7 @@
 
     .navegacion{
             width: 100%;
+            background: linear-gradient(rgba(236, 164, 232, 0.35), rgba(84, 226, 231, 0.35)) transparent;
             display: flex;
             flex-direction: column;
             height: auto;
@@ -375,11 +404,12 @@
             .navegacion li{
                 background:transparent;
                 align-items: center;
-                padding : 2% ;
+                padding : 2%;
             }
             .navegacion li a {
                 background:transparent;
                 font-size: 15px;
+                font-weight: bolder;
                 margin: 0px;
                 padding: 0px;
                 justify-content:center;
@@ -491,6 +521,11 @@
         .contactos p{
             font-size:15px;
         }
+        .contactos h2{
+            color:rgba(84, 226, 231, 2) ;
+            font-size: 30px;
+            font-weight: bolder;
+        }
         .redes-sociales a{
             display: block;
             padding: 0px 0px;
@@ -507,7 +542,7 @@
 }
 @media (min-width: 600px)  and (max-width: 900px){
     .cabecera{
-        background-image: linear-gradient(rgba(20, 7, 12, 0.75), rgba(20, 7, 12, 0.75)),url(imagenes/paramore\ cantante\ pierna.jpg);
+        background-image: linear-gradient(rgba(20, 7, 12, 0.75), rgba(20, 7, 12, 0.75)),url(imagenes/cantante.jpg);
         background-position: center center;
         background-repeat: no-repeat;
         background-size: cover;
@@ -519,6 +554,12 @@
         flex-direction:column;
         height: auto;
         width: auto;
+    }
+    .logo{
+        background:transparent;
+        width: 15rem;
+        height: 15rem;
+        padding-top: 6%;
     }
     .navegacion{
         width:100%;
@@ -546,6 +587,12 @@
         flex-direction: column;
         height: auto;   
     }
+    .titular h1{
+        font-size: 40px;
+    }
+    .botones a{
+        font-size:30px ;
+    }
     
     .Biography-box p{
       
@@ -562,6 +609,9 @@
         font-size: 40px;
     }
     .articulos a{
+        font-size: 30px;
+    }
+    .formulario h3{
         font-size: 30px;
     }
     .subtitle{
@@ -588,7 +638,19 @@
     }
     .table th{
         font-size: 12px;
+    }
+    .contactos h2{
+        font-size: 30px;
     } 
+    .contactos p{
+        font-size: 15px;
+    }
+    .redes-sociales a{
+        font-size: 20px;
+    }
+    .boton-footer p{
+        font-size: 10px;
+    }
          
     
    
