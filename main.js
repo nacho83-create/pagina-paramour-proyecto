@@ -8,8 +8,7 @@ function traer(){
 }
 function tabla(datos){
     contenido.innerHTML=''
-    for(let valor of datos){
-        
+    for(let valor of datos){   
         contenido.innerHTML +=`
             <tr>
             <th scope="row">${ valor.id }</th>
@@ -19,7 +18,6 @@ function tabla(datos){
             <td>${ valor.phone }</td>
             <td>${ valor.address.city }</td>
             </tr>
-        
         `    
     }
 } 
@@ -68,8 +66,6 @@ form.addEventListener("submit", e=>{
     }else{
         parrafo.innerHTML= "Sent Successfully"
     }
-    
-
 })
 
 
