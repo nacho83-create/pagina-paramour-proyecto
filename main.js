@@ -3,16 +3,13 @@ function traer(){
     fetch(`https://jsonplaceholder.typicode.com/users`)
     .then(res => res.json())
     .then(datos => {
-        console.log(datos)
-        //this.usuarios=datos
         tabla(datos)
     })
 }
 function tabla(datos){
-    console.log(datos)
     contenido.innerHTML=''
     for(let valor of datos){
-        //console.log(valor.name)
+        
         contenido.innerHTML +=`
             <tr>
             <th scope="row">${ valor.id }</th>
@@ -43,7 +40,7 @@ form.addEventListener("submit", e=>{
     let regexPhone=/^\(?([0-9]{3})\)?[-. ]?([0-9]{4})[-. ]?([0-9]{6})$/
 
     if (!regexName.test(nombre.value)){
-        warnings+=`Inavlid Name <br>`
+        warnings+=`Invalid Name <br>`
         entrar=true
     }
     if (!regexName.test(apellido.value)){
@@ -51,11 +48,11 @@ form.addEventListener("submit", e=>{
         entrar=true
     }
     if (!regexPhone.test(telefono.value)){
-        warnings+=`Inavlid Phone <br>`
+        warnings+=`Invalid Phone <br>`
         entrar=true
     }
     if (!regexEmail.test(email.value)){
-        warnings+=`Inavlid Email <br>`
+        warnings+=`Invalid Email <br>`
         entrar=true
     }
     if (direccion.value.length<1){
