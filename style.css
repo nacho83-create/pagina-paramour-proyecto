@@ -1,344 +1,747 @@
-*{
-    margin: 1px;
-    padding: 2px;
+* {
+    margin: 0px;
+    padding: 0px;
     box-sizing: border-box;
-    font-family: 'Delicious Handrawn', cursive ;
-    
+    font-family: 'Dosis', sans-serif;
+    font-family: 'Maven Pro', sans-serif;
+    font-family: 'Noto Sans', sans-serif;
+    font-family: 'Raleway', sans-serif;
+    font-family: 'Calligraffitti', cursive;
+    font-family: 'Ubuntu', sans-serif;
+
+
 }
-.cuerpo{
-    background-color: rgb(44, 41, 41);
+
+.cuerpo {
+    background-color: black;
     display: flex;
     flex-flow: column nowrap;
 }
-    .cabecera{
+
+.cabecera {
     background-image: url(imagenes/fondoCabecera.jpg);
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
     display: flex;
     flex-flow: column nowrap;
-    transition: background-color 0.4s ease-in-out;
-    }
-    .cabecera-discografia{
-        background-color: black;
-    }
-        
+}
 
-    
-        .seccion-1{
-            background: transparent;
-        }
-            .menu{
-                background: transparent;
-                display: flex;
-                flex-flow: row nowrap;
-                height: 100px;
-                align-items: center;
-            }
-                
-                .logo{
-                    background:transparent ;
-                    flex: 0 1 auto;
-                    height: 150px;
-                    width: 150px;
-                    padding-top: 10px;
-                }
-                .navegacion{
-                    display: flex;
-                    background:transparent ;
-                    flex: 1 1 auto;
-                    height: 50px;
-                    justify-content:space-around;
-                }
-                    .navegacion a{
-                        color: rgb(5, 160, 250);
-                        text-decoration: none;
-                        line-height: normal;
-                        font-size: 31px;
-                        transition: botton all 500ms ease;
 
-                    }
-                        .navegacion a:hover{
-                            color: rgb(218, 34, 172);
-                            border-bottom: botton 4px solid transparent;
-                        }
-            .texto-principal{
-                background: transparent;
-                font-size: 30px;
 
-            }
-                .titular{
-                    background: transparent;
-                    display: flex;
-                    justify-content: left;
-                    text-align: left;
-                    padding-right: 65%;
-                    padding-top: 20%;
-                }
-                    .titular h1{
-                        color: rgb(5, 160, 250);
-                        text-decoration: none;
-                    }
-                    .spicyPink{
-                        color: rgb(218, 34, 172);
-                    }
-                      
-                .botones{
-                    background:transparent;
-                    text-align: center;
-                    font-size: 40px;
-                    padding: 10% 73% 20% 0%;
-                }
-                    .botones a{
-                        color: rgb(5, 160, 250);
-                        text-decoration: none;
-                    
-                    }
-                        .botones a:hover{
-                            color: rgb(218, 34, 172);
-                            border-bottom: botton 4px solid transparent; 
-                        }
-        .texto-discografia{
-            background-color: blueviolet;
-        }
-        .titular-discografia{
-            background-color: antiquewhite;
-        }
-    
-    .medio{
-    background-image:linear-gradient(rgba(5, 7, 12, 0.75), rgba(5, 7, 12, 0.75)),url(imagenes/main.jpg);
+.seccion-1 {
+    background: transparent;
+}
+
+.menu {
+    background: transparent;
+    display: flex;
+    flex-flow: row nowrap;
+    height: 100px;
+    align-items: center;
+}
+
+.logo {
+    background: transparent;
+    flex: 0 1 auto;
+    height: 290px;
+    width: 290px;
+    padding-top: 100px;
+}
+
+.navegacion {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: linear-gradient(rgba(236, 164, 232, 0.95), rgba(84, 226, 231, 0.95)) transparent;
+    color: #fff;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.navegacion ul {
+    display: flex;
+    margin: 0;
+    padding: 0px;
+    list-style: none;
+}
+
+.navegacion li {
+    margin: 0 50px;
+    padding: 2em;
+}
+
+.navegacion a {
+    color: #0a0a0a;
+    text-decoration: none;
+    font-size: 20px;
+    font-family: 'Noto Sans', sans-serif;
+    font-weight: bolder;
+}
+
+.navegacion a:hover {
+    color: rgb(218, 34, 172);
+    border-bottom: botton 4px solid transparent;
+
+}
+
+
+.texto-principal {
+    background: transparent;
+    font-size: 30px;
+
+}
+
+.titular {
+    background: transparent;
+    display: flex;
+    justify-content: left;
+    text-align: left;
+    padding-right: 65%;
+    padding-top: 20%;
+}
+
+.titular h1 {
+    background: transparent;
+    font-size: 60px;
+    font-family: 'Ubuntu', sans-serif;
+    padding-left: 25px;
+    color: rgb(5, 160, 250);
+    text-decoration: none;
+}
+
+.spicyPink {
+    color: rgb(218, 34, 172);
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.botones {
+    background: transparent;
+    text-align: left;
+    font-size: 40px;
+    padding: 18% 60% 15% 0%;
+}
+
+.botones a {
+    background: transparent;
+    color: rgb(5, 160, 250);
+    text-decoration: none;
+    padding: 20px;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.botones a:hover {
+    color: rgb(218, 34, 172);
+    border-bottom: botton 4px solid transparent;
+}
+
+
+.medio {
+    background-color: transparent;
     display: flex;
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
     flex-flow: column;
     align-items: center;
-    padding-top: 20%;
+    padding-top: 0%;
+    padding-bottom: 0%;
+}
+
+.Biography-1 {
+    justify-content: center;
+    padding: 5% 4%;
+    background-color: transparent;
+    flex-direction: column;
+    background-image: radial-gradient(circle farthest-corner at 10% 20%, rgb(236, 164, 232) 17.8%, rgb(84, 226, 231) 100.2%);
+    background-repeat: no-repeat;
+    background-position: center center;
+
+}
+
+.Biography-box {
+    padding-top: 0%;
+    padding-bottom: 10%;
+}
+
+.Biography-box h2 {
+    background-color: transparent;
+    font-size: 50px;
+    font-family: 'Ubuntu', sans-serif;
+    padding-top: 0%;
+    padding-bottom: 5%;
+    margin-bottom: 0px;
+    text-align: center;
+    color: rgb(54, 53, 53);
+}
+
+
+.Biography-box p {
+    width: auto;
+    margin: auto;
+    font-size: 20px;
+    padding: 5% 5%;
+    border: 3px solid #424343;
+    background-color: #b8afb5ee;
+    border-radius: 30px;
+    column-count: 3;
+}
+
+.Biography-box b {
+    font-family: 'Calligraffitti', cursive;
+}
+
+
+
+
+.link-events-titular {
+    background: transparent;
+    display: flex;
+    flex-flow: column;
+    font-size: 100px;
+}
+
+
+.formulario {
+    max-width: 70%;
+    padding: 5%;
+    margin: 0 auto;
+    font-weight: bold;
+    border-radius: 2%;
+    box-shadow: inset 1px 1px 22px 4px rgb(34, 33, 33);
+}
+
+.warnings {
+    width: 200px;
+    text-align: center;
+    margin: auto;
+    color: red;
+    padding-top: 20px;
+}
+
+.articulos {
+    background-image: linear-gradient(rgba(5, 7, 12, 0.75), rgba(5, 7, 12, 0.75)), url(imagenes/main.jpg);
+    width: 100%;
+    height: auto;
+    padding-top: 10%;
     padding-bottom: 20%;
-    }
-                                        
-    .medio-discografia{
-        background: black;
-        display: flex;
-        background-position: center center;
-        background-repeat: no-repeat;
-        background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+}
+
+.articulos a {
+    color: white;
+    text-decoration: none;
+}
+
+.proximo-recital {
+    width: 60%;
+    margin: 2%;
+    padding: 2%;
+    border-radius: 2%;
+    box-shadow: inset 1px 1px 22px 4px rgb(34, 33, 33);
+}
+
+.subtitle {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: transparent;
 
 
-    }
-        .link-events-titular{
-        background: transparent;
-        display: flex;
-        flex-flow: column;
-        font-size: 100px;
-        }
-            .subtitle{
-            background: transparent;
-            display: flex;
-            flex-flow: column;
-            }
-                .subtitle p{
-                    font-size: 50px ;
-                    color: white;
-                    text-decoration: none;
-                }
-        .articulos a{
-            color: white;
-            text-decoration: none;
-        }        
-        .articulos-discografia{
-            background-color: antiquewhite;
-            flex: 2 1 auto;
-            display: flex;
-            flex-flow: row wrap;
-        }
-            .articulo-disco{
-                background-color: aqua;
-                flex: 1 1 100%;
-            }
-        .videos{
-            background-color: cornflowerblue;
-            flex: 1 1 auto;
-            flex-flow: row wrap;
-           
-        } 
-            .video1{
-            background-color: blue;
-            flex: 1 1 auto;
-            height: 40%;
-            }
-            .video2{
-            background-color: aquamarine;
-            flex: 1 1 auto;
-            height: 40%;
-            }      
-        
-    .pie-pagina{
+}
+
+.subtitle h3 {
+    font-size: 50px;
+    font-family: 'Ubuntu', sans-serif;
+    color: white;
+}
+
+.subtitle p {
+    font-size: 30px;
+    color: antiquewhite;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.table {
+    background-color: rgb(159, 210, 240);
+    ;
+}
+
+.pie-pagina {
     background-color: black;
     display: flex;
+    flex-direction: column;
     justify-content: center;
-    }
-        .contenido-footer{
-            background:transparent;
-            width: 100%;
-            display: flex;
-            flex-direction: column;  
-        }
-            .contactos{
-                background:transparent;
-                display: flex;
-                flex-direction: column;
-            }
-                .titulo-banda{
-                    display: flex;
-                    justify-content: center;
-                    font-size: 45px;
-                    color: white;
-                }
-                .contactos p{
-                    display: flex;
-                    justify-content: center;
-                    font-size: 25px;
-                    color: white;
-                }
-            .redes-sociales{
-                background:transparent;
-                display: flex;
-                justify-content: center;
-            }
-                .redes-sociales a{
-                    display: block;
-                    padding: 0px 0px;
-                    background-color: rgb(36, 37, 37);
-                    color: aliceblue;
-                    line-height: 10px;
-                    font-size: 35px;
-                    box-shadow: 0px 6px 6px 0 rgba(36, 37, 37, 0.75);
-                    transition: .2s;
-                }
-                .redes-sociales a:hover{
-                    filter: blur(1.5px);
-                }
-               
-                .social-media-icons i{
-                    margin:10px 10px;
-                    text-decoration: none;
-                    color: azure;
-                }
-                .social-media-icons:hover i{
-                    color:rgb(218, 34, 172) ;
-                }
-            .boton-footer{
-                background:transparent;
-                display: flex;
-                justify-content: center;
-            }
-                .boton-footer p{
-                    font-size: 15px;
-                    color: aliceblue;
-                    padding-top: 10%;
-                }
-                .boton-footer span{
-                    opacity: 0.5;
-                }
-@media all and (max-width: 600px){
-    .cabecera{
-        background-image: linear-gradient(rgba(20, 7, 12, 0.75), rgba(20, 7, 12, 0.75)),url(imagenes/fondo.jpg);
+    width: 100%;
+    padding-bottom: 1%;
+    font-family: 'Noto Sans', sans-serif;
+}
+
+.contenido-footer {
+    background: transparent;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+.contactos {
+    background: transparent;
+    display: flex;
+    flex-direction: column;
+}
+
+.titulo-banda {
+    background: transparent;
+    display: flex;
+    margin: 1%;
+    padding-top: 5%;
+    justify-content: center;
+    font-size: 45px;
+    font-weight: 100;
+    color: white;
+    font-family: 'Raleway', sans-serif;
+}
+
+.contactos h2 {
+    color: rgba(84, 226, 231, 2);
+    font-size: 50px;
+    font-weight: bolder;
+}
+
+.contactos h2:hover {
+    color: #fff;
+    text-shadow: 0 0 5px rgba(84, 226, 231, 2),
+        0 0 20px rgba(84, 226, 231, 2),
+        0 0 40px rgba(84, 226, 231, 2),
+        0 0 100px rgba(84, 226, 231, 2);
+
+}
+
+.contactos p {
+    display: flex;
+    justify-content: center;
+    padding-top: 10px;
+    font-size: 25px;
+    color: white;
+}
+
+.redes-sociales {
+    background: transparent;
+    display: flex;
+    justify-content: center;
+    padding-top: 3%;
+}
+
+.redes-sociales a {
+    display: block;
+    padding: 0px 0px;
+    background-color: rgb(36, 37, 37);
+    color: white;
+    line-height: 10px;
+    font-size: 35px;
+    box-shadow: 0px 6px 6px 0 rgba(36, 37, 37, 0.75);
+    transition: .2s;
+}
+
+.redes-sociales a:hover {
+    filter: blur(1.5px);
+}
+
+.social-media-icons i {
+    margin: 10px 10px;
+    text-decoration: none;
+    color: azure;
+}
+
+.social-media-icons:hover i {
+    color: rgb(218, 34, 172);
+}
+
+.boton-footer {
+    width: 100%;
+    height: 20%;
+    padding-top: 150px;
+    background: transparent;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+}
+
+.boton-footer p {
+    font-size: 15px;
+    color: aliceblue;
+}
+
+.boton-footer span {
+    opacity: 0.5;
+}
+
+.boton-footer span:hover {
+    color: #fff;
+    text-shadow: 0 0 5px rgb(223, 44, 199),
+        0 0 20px rgb(252, 5, 219),
+        0 0 40px rgb(223, 44, 199),
+        0 0 300px rgb(223, 44, 199);
+}
+
+
+
+@media all and (max-width: 600px) {
+    .cabecera {
+        background-image: linear-gradient(rgba(20, 7, 12, 0.75), rgba(20, 7, 12, 0.75)), url(imagenes/fondo.jpg);
         background-position: center center;
         background-repeat: no-repeat;
         background-size: cover;
         display: flex;
         flex-flow: column nowrap;
-       
-    }    
-    .menu{
-        flex-direction: column;
         height: auto;
-    }
-        .navegacion{
-            flex-direction: row;
-            height: auto;
-        }
-            .navegacion a{
-                font-size: 23px;
-            }
-        .texto-principal{
-            background:transparent;
-            padding-top: 50%;
-        }    
-        .titular{
-            background: transparent;
-            padding: 0;
-            
-        }
-            .titular h1{
-                font-size: 33px;
-                text-align:center;
-            }
-        
-        .botones{
-            background: transparent ;
-            padding: 20px;
 
-        }
-            .botones a{
-                background: transparent;
-                font-size: 25px;
-            }
-          
-    .medio{
+    }
+
+    .menu {
         flex-direction: column;
         height: auto;
     }
-        .articulos{
-             text-align: center;
-        }
-        .link-events-titular{
-            font-size: 60px;
-        }
-        .subtitle p{
-            font-size: 40px;
-        }
-    .pie-pagina{
+
+    .logo {
+        background: transparent;
+        flex: auto;
+        height: 200px;
+        width: 300px;
+        padding-top: 0px;
+    }
+
+
+    .navegacion {
+        width: 100%;
+        background: linear-gradient(rgba(236, 164, 232, 0.70), rgba(84, 226, 231, 0.70)) transparent;
+        display: flex;
         flex-direction: column;
         height: auto;
     }
-        .titulo-banda{
-            font-size: 20px;
-        }
-        .contactos p{
-            font-size:15px;
-        }
-        .redes-sociales a{
-            display: block;
-            padding: 0px 0px;
-            background-color: rgb(36, 37, 37);
-            color: aliceblue;
-            line-height: 7px;
-            font-size: 15px;
-            box-shadow: 0px 6px 6px 0 rgba(36, 37, 37, 0.75);
-            transition: .2s;
-        }
-        .boton-footer p{
-            font-size: 10px;
-        }
+
+    .navegacion ul {
+        flex-direction: column;
+        background-color: transparent;
+        display: flex;
+        align-items: flex-end;
+        list-style: none;
+
+    }
+
+    .navegacion li {
+        background: transparent;
+        align-items: center;
+        padding: 2%;
+    }
+
+    .navegacion li a {
+        background: transparent;
+        font-size: 16px;
+        font-weight: bolder;
+        margin: 0px;
+        padding: 0px;
+        justify-content: center;
+    }
+
+    .texto-principal {
+        background: transparent;
+        padding-top: 50%;
+    }
+
+    .titular {
+        background: transparent;
+        padding: 0;
+
+    }
+
+    .titular h1 {
+        font-size: 25px;
+        text-align: center;
+    }
+
+    .botones {
+        background: transparent;
+        padding: 10% 10% 10% 30%;
+        flex-direction: row;
+
+    }
+
+    .botones a {
+        background: transparent;
+        font-size: 15px;
+    }
+
+    .medio {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .Biography-box p {
+        width: auto;
+        margin: auto;
+        font-size: 20px;
+        padding: 3% 3%;
+        border: 3px solid #424343;
+        background-color: #e6dee4ee;
+        border-radius: 30px;
+        column-count: 2;
+    }
+
+    .Biography-box h2 {
+        font-size: 30px;
+    }
+
+    .Biography-box p {
+        font-size: 5px;
+        font-family: 'Ubuntu', sans-serif;
+    }
+
+    .Biography-box b {
+        font-size: 8px;
+        font-family: 'Ubuntu', sans-serif;
+    }
+
+    .formulario {
+        font-size: 10px;
+    }
+
+    .formulario h3 {
+        font-size: 20px;
+    }
+
+    .articulos {
+        text-align: center;
+    }
+
+    .link-events-titular {
+        font-size: 30px;
+    }
+
+    .proximo-recital {
+        width: 80%;
+    }
+
+    .subtitle {
+        width: 100%;
+    }
+
+    .subtitle p {
+        font-size: 40px;
+    }
+
+    .Biography-box b {
+        font-size: 15px;
+    }
+
+    .Biography-box p {
+        font-size: 13px;
+    }
+
+    .subtitle h3 {
+        font-size: 30px;
+    }
+
+    .subtitle p {
+        font-size: 20px;
+    }
+
+    .mt-5 {
+        width: 100%;
+    }
+
+    .table {
+        width: 100%;
+        font-size: 5px;
+    }
+
+    .table th {
+        font-size: 10px;
+    }
+
+
+
+    .pie-pagina {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .titulo-banda {
+        font-size: 20px;
+    }
+
+    .contactos p {
+        font-size: 15px;
+    }
+
+    .contactos h2 {
+        color: rgba(84, 226, 231, 2);
+        font-size: 30px;
+        font-weight: bolder;
+    }
+
+    .redes-sociales a {
+        display: block;
+        padding: 0px 0px;
+        background-color: rgb(36, 37, 37);
+        color: aliceblue;
+        line-height: 7px;
+        font-size: 15px;
+        box-shadow: 0px 6px 6px 0 rgba(36, 37, 37, 0.75);
+        transition: .2s;
+    }
+
+    .boton-footer p {
+        font-size: 10px;
+    }
 }
-@media all and (max-width: 900px){
-    .menu{
+
+@media (min-width: 600px) and (max-width: 900px) {
+    .cabecera {
+        background-image: linear-gradient(rgba(20, 7, 12, 0.75), rgba(20, 7, 12, 0.75)), url(imagenes/cantante.jpg);
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        display: flex;
+        flex-flow: column nowrap;
+
+    }
+
+    .menu {
         flex-direction: column;
         height: auto;
         width: auto;
     }
-        .navegacion{
-            width:auto;
-            justify-content: center;
-        }
-    .medio{
-        flex-direction: column;
-        height: auto;   
+
+    .logo {
+        background: transparent;
+        width: 15rem;
+        height: 15rem;
+        padding-top: 6%;
     }
-}            
+
+    .navegacion {
+        width: 100%;
+        justify-content: center;
+    }
+
+    .navegacion li a {
+        background: transparent;
+        font-size: 18px;
+        margin: 0px;
+        padding: 0px;
+        justify-content: center;
+    }
+
+    .navegacion ul {
+        display: flex;
+        margin: 0;
+        padding: 0px;
+        list-style: none;
+    }
+
+    .navegacion li {
+        margin: 0 30px;
+        padding: 1em;
+    }
+
+    .medio {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .titular h1 {
+        font-size: 40px;
+    }
+
+    .botones a {
+        font-size: 30px;
+    }
+
+    .Biography-box p {
+
+        width: auto;
+        margin: 0 auto;
+        padding: 8px;
+        border: 2px solid #424343;
+        background-color: #f2f2f2cf;
+        border-radius: 10px;
+        font-size: 20px;
+
+    }
+
+    .Biography-box h2 {
+        font-size: 40px;
+    }
+
+    .articulos a {
+        font-size: 30px;
+    }
+
+    .formulario h3 {
+        font-size: 30px;
+    }
+
+    .subtitle {
+        width: 100%;
+        display: flex;
+        padding-top: 10%;
+        flex-direction: column;
+        align-items: center;
+        background: transparent;
+    }
+
+    .subtitle h3 {
+        font-size: 30px;
+    }
+
+    .subtitle p {
+        font-size: 20px;
+    }
+
+    .mt-5 {
+        width: 100%;
+    }
+
+    .table {
+        width: 100%;
+        font-size: 10px;
+    }
+
+    .table th {
+        font-size: 12px;
+    }
+
+    .contactos h2 {
+        font-size: 30px;
+    }
+
+    .contactos p {
+        font-size: 15px;
+    }
+
+    .redes-sociales a {
+        font-size: 20px;
+    }
+
+    .boton-footer p {
+        font-size: 10px;
+    }
 
 
 
 
+}
+
+html {
+    scroll-behavior: smooth;
+}
