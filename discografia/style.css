@@ -8,7 +8,6 @@
     font-family: 'Raleway', sans-serif;
     font-family: 'Calligraffitti', cursive;
     font-family: 'Ubuntu', sans-serif;
-
 }
 
 .cuerpo {
@@ -81,44 +80,6 @@
 
 
 }
-
-.navegacion {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    background: linear-gradient(rgba(236, 164, 232, 0.95), rgba(84, 226, 231, 0.95)) transparent;
-    color: #fff;
-    display: flex;
-    justify-content: flex-end;
-}
-
-.navegacion ul {
-    display: flex;
-    margin: 0;
-    padding: 0px;
-    list-style: none;
-}
-
-.navegacion li {
-    margin: 0 50px;
-    padding: 2em;
-}
-
-.navegacion a {
-    color: #0a0a0a;
-    text-decoration: none;
-    font-size: 20px;
-    font-family: 'Noto Sans', sans-serif;
-    font-weight: bolder;
-}
-
-.navegacion a:hover {
-    color: rgb(218, 34, 172);
-    border-bottom: botton 4px solid transparent;
-
-}
-
 
 .texto-discografia {
     background: transparent;
@@ -653,38 +614,6 @@ html {
 
     }
 
-    .navegacion {
-        width: 100%;
-        background: linear-gradient(rgba(236, 164, 232, 0.75), rgba(84, 226, 231, 0.75)) transparent;
-        display: flex;
-        flex-direction: column;
-        height: auto;
-    }
-
-    .navegacion ul {
-        flex-direction: column;
-        background-color: transparent;
-        display: flex;
-        align-items: flex-end;
-        list-style: none;
-
-    }
-
-    .navegacion li {
-        background: transparent;
-        align-items: center;
-        padding: 2%;
-    }
-
-    .navegacion li a {
-        background: transparent;
-        font-size: 16px;
-        font-weight: bolder;
-        margin: 0px;
-        padding: 0px;
-        justify-content: center;
-    }
-
     .texto-discografia h2 {
         font-size: 25px;
     }
@@ -803,31 +732,6 @@ html {
             0 0 60px rgb(223, 44, 199);
 
 
-    }
-
-    .navegacion {
-        width: 100%;
-        justify-content: center;
-    }
-
-    .navegacion li a {
-        background: transparent;
-        font-size: 18px;
-        margin: 0px;
-        padding: 0px;
-        justify-content: center;
-    }
-
-    .navegacion ul {
-        display: flex;
-        margin: 0;
-        padding: 0px;
-        list-style: none;
-    }
-
-    .navegacion li {
-        margin: 0 30px;
-        padding: 1em;
     }
 
     .texto-discografia h2 {
