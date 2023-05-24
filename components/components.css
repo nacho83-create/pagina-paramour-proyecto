@@ -1,0 +1,271 @@
+/* NAVBAR */
+.navegacion {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: linear-gradient(rgba(236, 164, 232, 0.95), rgba(84, 226, 231, 0.95)) transparent;
+    color: #fff;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.navegacion ul {
+    display: flex;
+    margin: 0;
+    padding: 0px;
+    list-style: none;
+}
+
+.navegacion li {
+    margin: 0 50px;
+    padding: 2em;
+}
+
+.navegacion a {
+    color: #0a0a0a;
+    text-decoration: none;
+    font-size: 20px;
+    font-family: 'Noto Sans', sans-serif;
+    font-weight: bolder;
+}
+
+.navegacion a:hover {
+    color: rgb(218, 34, 172);
+    border-bottom: botton 4px solid transparent;
+}
+
+/* FOOTER */
+.pie-pagina {
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    padding-bottom: 1%;
+    font-family: 'Noto Sans', sans-serif;
+}
+
+.contenido-footer {
+    background: transparent;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+.contactos {
+    background: transparent;
+    display: flex;
+    flex-direction: column;
+}
+
+.titulo-banda {
+    background: transparent;
+    display: flex;
+    margin: 1%;
+    padding-top: 5%;
+    justify-content: center;
+    font-size: 45px;
+    font-weight: 100;
+    color: white;
+    font-family: 'Raleway', sans-serif;
+}
+
+.contactos h2 {
+    color: rgba(84, 226, 231, 2);
+    font-size: 50px;
+    font-weight: bolder;
+}
+
+.contactos h2:hover {
+    color: #fff;
+    text-shadow: 0 0 5px rgba(84, 226, 231, 2),
+        0 0 20px rgba(84, 226, 231, 2),
+        0 0 40px rgba(84, 226, 231, 2),
+        0 0 100px rgba(84, 226, 231, 2);
+}
+
+.contactos p {
+    display: flex;
+    justify-content: center;
+    padding-top: 10px;
+    font-size: 25px;
+    color: white;
+}
+
+.redes-sociales {
+    background: transparent;
+    display: flex;
+    justify-content: center;
+    padding-top: 3%;
+}
+
+.redes-sociales a {
+    display: block;
+    padding: 0px 0px;
+    background-color: rgb(36, 37, 37);
+    color: white;
+    line-height: 10px;
+    font-size: 35px;
+    box-shadow: 0px 6px 6px 0 rgba(36, 37, 37, 0.75);
+    transition: .2s;
+}
+
+.redes-sociales a:hover {
+    filter: blur(1.5px);
+}
+
+.social-media-icons i {
+    margin: 10px 10px;
+    text-decoration: none;
+    color: azure;
+}
+
+.social-media-icons:hover i {
+    color: rgb(218, 34, 172);
+}
+
+.boton-footer {
+    width: 100%;
+    height: 20%;
+    padding-top: 150px;
+    background: transparent;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.boton-footer p {
+    font-size: 15px;
+    color: aliceblue;
+}
+
+.boton-footer span {
+    opacity: 0.5;
+}
+
+.boton-footer span:hover {
+    color: #fff;
+    text-shadow: 0 0 5px rgb(223, 44, 199),
+        0 0 20px rgb(252, 5, 219),
+        0 0 40px rgb(223, 44, 199),
+        0 0 300px rgb(223, 44, 199);
+}
+
+@media all and (max-width: 600px) {
+
+    /* NAVBAR */
+    .navegacion {
+        width: 100%;
+        background: linear-gradient(rgba(236, 164, 232, 0.75), rgba(84, 226, 231, 0.75)) transparent;
+        display: flex;
+        flex-direction: column;
+        height: auto;
+    }
+
+    .navegacion ul {
+        flex-direction: column;
+        background-color: transparent;
+        display: flex;
+        align-items: flex-end;
+        list-style: none;
+    }
+
+    .navegacion li {
+        background: transparent;
+        align-items: center;
+        padding: 2%;
+    }
+
+    .navegacion li a {
+        background: transparent;
+        font-size: 16px;
+        font-weight: bolder;
+        margin: 0px;
+        padding: 0px;
+        justify-content: center;
+    }
+
+    /* FOOTER */
+    .pie-pagina {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .titulo-banda {
+        font-size: 20px;
+    }
+
+    .contactos p {
+        font-size: 15px;
+    }
+
+    .contactos h2 {
+        color: rgba(84, 226, 231, 2);
+        font-size: 30px;
+        font-weight: bolder;
+    }
+
+    .redes-sociales a {
+        display: block;
+        padding: 0px 0px;
+        background-color: rgb(36, 37, 37);
+        color: aliceblue;
+        line-height: 7px;
+        font-size: 15px;
+        box-shadow: 0px 6px 6px 0 rgba(36, 37, 37, 0.75);
+        transition: .2s;
+    }
+
+    .boton-footer p {
+        font-size: 10px;
+    }
+}
+
+@media (min-width: 600px) and (max-width: 900px) {
+
+    /* NAVBAR */
+    .navegacion {
+        width: 100%;
+        justify-content: center;
+    }
+
+    .navegacion li a {
+        background: transparent;
+        font-size: 18px;
+        margin: 0px;
+        padding: 0px;
+        justify-content: center;
+    }
+
+    .navegacion ul {
+        display: flex;
+        margin: 0;
+        padding: 0px;
+        list-style: none;
+    }
+
+    .navegacion li {
+        margin: 0 30px;
+        padding: 1em;
+    }
+
+    /* FOOTER */
+    .contactos h2 {
+        font-size: 30px;
+    }
+
+    .contactos p {
+        font-size: 15px;
+    }
+
+    .redes-sociales a {
+        font-size: 20px;
+    }
+
+    .boton-footer p {
+        font-size: 10px;
+    }
+}

@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,72 +8,92 @@
     <title>Paramore Oficial</title>
     <link rel="shortcut icon" href="imagenes/icono.png" type="image/x-icon">
     <link rel="stylesheet" href="/style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Calligraffitti&family=Dosis&family=Maven+Pro&family=Noto+Sans&family=Raleway:wght@300&family=Ubuntu&display=swap"
+    <link rel="stylesheet" href="/components/components.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Calligraffitti&family=Dosis&family=Maven+Pro&family=Noto+Sans&family=Raleway:wght@300&family=Ubuntu&display=swap"
         rel="stylesheet">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
-        
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+
 </head>
+
 <body class="cuerpo">
-    
+
     <header class="cabecera">
-       
+
         <div class="seccion-1">
             <div class="menu">
                 <div class="logo">
-                    <img src="imagenes/logo.png" class="logo" alt="rock banda">    
+                    <img src="imagenes/logo.png" class="logo" alt="rock banda">
                 </div>
-            </div>        
-            <nav id="nav" class="navegacion">
-                
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="#Biography">Biography</a></li>
-                    <li><a href="#Gallery">Gallery</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>       
-            </nav>       
-           
+            </div>
+
+            <custom-navbar home-href="index.html" biography-href="#Biography" gallery-href="#Gallery"
+                contact-href="#contact"></custom-navbar>
+
             <div class="texto-principal">
                 <div class="titular">
                     <h1>
-                        "The best gift you can give yourself is to have an  <span class="spicyPink">OPEN
+                        "The best gift you can give yourself is to have an <span class="spicyPink">OPEN
                             MIND"</span>
-                        
-                    </h1>   
+
+                    </h1>
                 </div>
                 <div class="botones">
                     <a href="#">Store</a>
                     <a href="/discografia/discografia.html">Discography</a>
                 </div>
-                
+
             </div>
-                
+
         </div>
-           
+
     </header>
-   
+
     <main class="medio">
         <div class="Biography-1" id="Biography">
             <div class="Biography-box">
-              <h2>>BIOGRAPHY</h2>
-              <p><b>Paramore</b> is a punk band that was formed in 2004 by musicians Jeremy Davis on bass, Hayley Williams on vocals, and Taylor York on guitar. The group originally hails from Franklin, Tennessee, where they began performing in various small venues and clubs. One year later, in 2005, they released their debut album <b>"All We Know Is Falling"</b>, which spawned three singles. 
-                
-                Despite achieving gold status in the UK, they did not gain the expected popularity. In 2004, the band made one of their first musical contributions by providing the soundtrack for the video game "The Sims 2" with their single "Pressure".
-    
-                Two years later, they composed their second album, <b>"Riot!"</b>, which brought the group greater popularity. With this album, their sales grew exponentially, reaching number 15 on the Billboard 200 chart, receiving numerous awards and certifications worldwide, including platinum status in the United States. One of their singles, "Decode", was chosen as the main theme song for the 2008 film "Twilight", in which they also included two more songs. In 2008, Paramore won the Teen Choice Awards for "Best Rock Band" and "Best Rock Song" for their song "Decode". The same year, they were nominated for a Grammy award, but did not win. They also provided music for a new video game, "Guitar Hero On Tour: Decades".
-                
-                A year later, the band began working on what would become their third album,<b>"Brand New Eyes"</b>, which broke all barriers and topped the charts in numerous countries, including the United States, the United Kingdom, Australia, and Germany. The album produced five singles, achieving gold status in many countries and receiving various certifications for its quality and sales.
-                
-                Shortly after, in 2011, the band embarked on a new project. They released a single called "Monster", which was chosen as the soundtrack for the film "Transformers: Dark of the Moon".
-                
-                That same year, the group participated in the Warped Tour Festival alongside other bands and soloists.
-                
-                In early 2012, the group started working on their fourth studio album, which would be their fourth LP, and released the single <b>"Daydreaming"</b>. They also confirmed their participation in the Reading and Leeds Festivals for that year.
-                
-                Paramore is currently one of the most prominent punk bands in the music scene, serving as a reference for upcoming generations, who are looking up to the group as an example.
-                
-                Members of Paramore: <b>Hayley Williams (vocals), Taylor York (guitar), and Zac Farro (drums)</b>. The band has had other musicians come and go since its formation in 2004, including John Hembree, Jason Bynum, Hunter Lamb, Josh Farro, and Jeremy Davis.</p>
+                <h2>>BIOGRAPHY</h2>
+                <p><b>Paramore</b> is a punk band that was formed in 2004 by musicians Jeremy Davis on bass, Hayley
+                    Williams on vocals, and Taylor York on guitar. The group originally hails from Franklin, Tennessee,
+                    where they began performing in various small venues and clubs. One year later, in 2005, they
+                    released their debut album <b>"All We Know Is Falling"</b>, which spawned three singles.
+
+                    Despite achieving gold status in the UK, they did not gain the expected popularity. In 2004, the
+                    band made one of their first musical contributions by providing the soundtrack for the video game
+                    "The Sims 2" with their single "Pressure".
+
+                    Two years later, they composed their second album, <b>"Riot!"</b>, which brought the group greater
+                    popularity. With this album, their sales grew exponentially, reaching number 15 on the Billboard 200
+                    chart, receiving numerous awards and certifications worldwide, including platinum status in the
+                    United States. One of their singles, "Decode", was chosen as the main theme song for the 2008 film
+                    "Twilight", in which they also included two more songs. In 2008, Paramore won the Teen Choice Awards
+                    for "Best Rock Band" and "Best Rock Song" for their song "Decode". The same year, they were
+                    nominated for a Grammy award, but did not win. They also provided music for a new video game,
+                    "Guitar Hero On Tour: Decades".
+
+                    A year later, the band began working on what would become their third album,<b>"Brand New Eyes"</b>,
+                    which broke all barriers and topped the charts in numerous countries, including the United States,
+                    the United Kingdom, Australia, and Germany. The album produced five singles, achieving gold status
+                    in many countries and receiving various certifications for its quality and sales.
+
+                    Shortly after, in 2011, the band embarked on a new project. They released a single called "Monster",
+                    which was chosen as the soundtrack for the film "Transformers: Dark of the Moon".
+
+                    That same year, the group participated in the Warped Tour Festival alongside other bands and
+                    soloists.
+
+                    In early 2012, the group started working on their fourth studio album, which would be their fourth
+                    LP, and released the single <b>"Daydreaming"</b>. They also confirmed their participation in the
+                    Reading and Leeds Festivals for that year.
+
+                    Paramore is currently one of the most prominent punk bands in the music scene, serving as a
+                    reference for upcoming generations, who are looking up to the group as an example.
+
+                    Members of Paramore: <b>Hayley Williams (vocals), Taylor York (guitar), and Zac Farro (drums)</b>.
+                    The band has had other musicians come and go since its formation in 2004, including John Hembree,
+                    Jason Bynum, Hunter Lamb, Josh Farro, and Jeremy Davis.</p>
             </div>
             <section class="container" id="contact">
                 <div class="row my-5">
@@ -81,67 +102,77 @@
                             <h3 class="display-4 text-black text-center">CONTACT FORM</h3>
                             <div class="form-group">
                                 <label for="">Name:</label>
-                                <input type="text"placeholder="Enter Full Name"  id="nombre" name="nombre" class="form-control">
+                                <input type="text" placeholder="Enter Full Name" id="nombre" name="nombre"
+                                    class="form-control">
                             </div>
                             <div class="form-group">
                                 <label for="">UserName:</label>
-                                <input type="text"placeholder="Enter Full UserName"  id="apellido" name="apellido" class="form-control">
+                                <input type="text" placeholder="Enter Full UserName" id="apellido" name="apellido"
+                                    class="form-control">
                             </div>
                             <div class="form-group">
                                 <label for="">Phone:</label>
-                                <input type="text"placeholder="Enter xxx xxxx xxxxxx"  id="telefono" name="telefono" class="form-control">
+                                <input type="text" placeholder="Enter xxx xxxx xxxxxx" id="telefono" name="telefono"
+                                    class="form-control">
                             </div>
                             <div class="form-group">
                                 <label for="">Email:</label>
-                                <input type="text"placeholder="Enter Email"  id="email" name="email" class="form-control">
+                                <input type="text" placeholder="Enter Email" id="email" name="email"
+                                    class="form-control">
                             </div>
                             <div class="form-group">
                                 <label for="">Address:</label>
-                                <input type="text"placeholder="Enter Full Address"  id="direccion" name="direccion" class="form-control">
+                                <input type="text" placeholder="Enter Full Address" id="direccion" name="direccion"
+                                    class="form-control">
                             </div>
                             <div class="form-group">
                                 <label for="">Province / Country:</label>
-                                <input type="text"placeholder="Enter Province and Country"  id="lugar" name="lugar" class="form-control">
+                                <input type="text" placeholder="Enter Province and Country" id="lugar" name="lugar"
+                                    class="form-control">
                             </div>
                             <div class="form-group">
                                 <label for="">Reason Of Contact:</label>
                                 <select name="motivo-contacto" id="motivo-contacto" class="form-control">
                                     <option value="Fan Club Registration">Fan Club Registration</option>
-                                    <option value="Raffle Tickets For The Next Recital">Raffle Tickets For The Next Recital</option>
+                                    <option value="Raffle Tickets For The Next Recital">Raffle Tickets For The Next
+                                        Recital</option>
                                     <option value="Work For Us">Work For Us</option>
                                     <option value="Hire Our Services">Hire Our Services</option>
                                     <option value="Suggestions And Claims">Suggestions And Claims</option>
                                     <option value="Others">Others</option>
                                 </select>
-        
+
                             </div>
                             <div class="form-group">
                                 <label>Add File</label>
-                                <input type="file" class="form-control"> 
+                                <input type="file" class="form-control">
                             </div>
                             <div class="form-group">
                                 <button type="submit" class="btn btn-success">Send</button>
                                 <p class="warnings" id="warnings"></p>
                             </div>
-                                   
+
                         </form>
 
                     </div>
-    
-                    
+
+
                 </div>
 
             </section>
-            
-        
-        
-            
+
+
+
+
         </div>
 
         <div class="articulos">
             <a href="#" class="link-events-titular">Next Recital</a>
             <div class="proximo-recital">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3022.5237225659816!2d-73.9960136245504!3d40.750504471387785!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25a21fb011c85%3A0x33df10e49762f8e4!2sMadison%20Square%20Garden!5e0!3m2!1ses!2sar!4v1684094399459!5m2!1ses!2sar" width="100%" height="500" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe> 
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3022.5237225659816!2d-73.9960136245504!3d40.750504471387785!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25a21fb011c85%3A0x33df10e49762f8e4!2sMadison%20Square%20Garden!5e0!3m2!1ses!2sar!4v1684094399459!5m2!1ses!2sar"
+                    width="100%" height="500" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
             <div class="subtitle">
                 <h3>TICKET RAFFLE WINNER</h3>
@@ -150,59 +181,41 @@
                 <div class="container my-5 text-center">
                     <button class="btn btn-danger w-100" onclick="traer()">Press The Button </button>
                     <div class="mt-5">
-                      <table class="table">
-                          <thead>
-                            <tr>
-                              <th scope="col">#</th>
-                              <th scope="col">Name</th>
-                              <th scope="col">Username</th>
-                              <th scope="col">Email</th>
-                              <th scope="col">Phone</th>
-                              <th scope="col">City</th>
-                            </tr>
-                          </thead>
-                          <tbody id="contenido">
-                           
-                          </tbody>
+                        <table class="table">
+                            <thead>
+                                <tr>
+                                    <th scope="col">#</th>
+                                    <th scope="col">Name</th>
+                                    <th scope="col">Username</th>
+                                    <th scope="col">Email</th>
+                                    <th scope="col">Phone</th>
+                                    <th scope="col">City</th>
+                                </tr>
+                            </thead>
+                            <tbody id="contenido">
+
+                            </tbody>
                         </table>
-                
-                  </div>
+
+                    </div>
                 </div>
 
-                
+
             </div>
-           
-        </div>  
+
+        </div>
     </main>
 
-    <footer id="Contact" class="pie-pagina">
-        <div class="contenido-footer">
-            <div class="contactos">
-                <h2 class="titulo-banda">PARAMORE OFICIAL</h2>
-                <p>FOLLOW US ON OUR SOCIAL NETWORKS</p>
-            </div>
-            <div class="redes-sociales">
-                <a href="https://www.facebook.com/paramore/?locale=es_LA" class="social-media-icons">
-                    <i class='bx bxl-facebook-square'></i>
-                </a>
-                <a href="https://www.instagram.com/paramore/?hl=es" class="social-media-icons">
-                    <i class='bx bxl-instagram-alt'></i> 
-                </a>
-                <a href="https://twitter.com/paramore?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor" class="social-media-icons">
-                    <i class='bx bxl-twitter' ></i> 
-                </a>
-            </div>
-            <div class="boton-footer">
-                <p>Copyright &copy; 2023 Paramore. designed by <span>GRUPO7</span></p>
-            
-            </div> 
-    </footer>
+    <custom-footer></custom-footer>
 
     <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+        crossorigin="anonymous"></script>
 
     <script src="/main.js"></script>
+    <script src="/components/components.js"></script>
 </body>
 
 </html>
