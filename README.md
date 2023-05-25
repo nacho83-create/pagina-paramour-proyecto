@@ -15,5 +15,5 @@ Características principales
 
 ## Contribuidores
 - [Ignacio Cáceres](https://github.com/nacho83-create)
-- [M Molinas](https://github.com/MlMolinas)
+- [Maria Molinas](https://github.com/MlMolinas)
 - [Jhessy Millán](https://github.com/jhessym)
