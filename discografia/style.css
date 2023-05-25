@@ -592,26 +592,18 @@ html {
 
     .frase {
         color: rgb(223, 44, 199);
-        background: transparent;
-        padding: auto;
-        font-size: 13px;
+        background: transparent;    
+        font-size: 25px;
         font-weight: bolder;
-        font-family: 'Calligraffitti', cursive;
-        display: flex;
-        justify-content: center;
-        text-align: center;
-        transition: 2s;
+        font-family: 'Calligraffitti', cursive;   
     }
 
-    .frase:hover {
-        transform: scale(1.8);
+    .frase:hover{
         color: #fff;
         text-shadow: 0 0 5px rgb(223, 44, 199),
             0 0 10px rgb(223, 44, 199),
             0 0 20px rgb(223, 44, 199),
             0 0 40px rgb(223, 44, 199);
-
-
     }
 
     .texto-discografia h2 {
