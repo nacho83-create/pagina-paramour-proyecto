@@ -7,19 +7,20 @@
   }
 
   html body {
-    background-color:blanchedalmond;
+    background-color: #ECA4E8;
   }
   
   .contenedorH1 {
     margin-top: 7%;
   }
-  
+
   .carousel-inner {
     border-radius: 10px;
     margin-bottom: 30px;
   }
   
   .carousel {
+      
       position: relative;
       width: 100%; /* el carrusel ocupa el 100% del ancho disponible */
     }
