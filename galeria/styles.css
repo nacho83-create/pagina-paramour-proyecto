@@ -1,0 +1,170 @@
+/* Estilos generales */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+
+  html body {
+    background-color: #ECA4E8;
+  }
+  
+  .contenedorH1 {
+    margin-top: 7%;
+  }
+
+  .carousel-inner {
+    border-radius: 10px;
+    margin-bottom: 30px;
+  }
+  
+  .carousel {
+      
+      position: relative;
+      width: 100%; /* el carrusel ocupa el 100% del ancho disponible */
+    }
+  
+    .carousel-item {
+      position: relative;
+      display: none;
+      height: 100%;
+      width: 100%;
+      -webkit-transition: -webkit-transform 0.3s ease;
+      transition: -webkit-transform 0.3s ease;
+      transition: transform 0.3s ease;
+      transition: transform 0.3s ease, -webkit-transform 0.3s ease;
+    }
+    
+    .carousel-item.active,
+    .carousel-item-next,
+    .carousel-item-prev {
+      display: block;
+    }
+    
+    .carousel-item-next,
+    .carousel-item-prev {
+      position: absolute;
+      top: 0;
+    }
+    
+    .carousel-control-prev,
+    .carousel-control-next {
+      position: absolute;
+      top: 50%;
+      z-index: 5;
+      display: inline-block;
+      width: 25px;
+      height: 25px;
+      margin-top: -13px;
+      font-size: 20px;
+      font-weight: bold;
+      color: #fff;
+      text-align: center;
+      background-color: rgba(0, 0, 0, 0.5);
+      border-radius: 50%;
+      transition: opacity 0.15s ease-in-out;
+    }
+    
+    .carousel-control-prev:hover,
+    .carousel-control-next:hover {
+      opacity: 0.5;
+    }
+    
+    .carousel-control-prev {
+      left: 0;
+    }
+    
+    .carousel-control-next {
+      right: 0;
+    }
+    
+    .carousel-item img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover; /* Ajusta la imagen al tamaño del carrusel */
+    }
+    
+    @media (max-width: 768px) {
+      .carousel-item {
+        height: 80vh;
+      }
+    }
+
+  /* Estilos de la sección de videos */
+  
+  header {
+    position: relative;
+    z-index: 9998;
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  main {
+    padding: 20px;
+  }
+  
+  section {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  h2 {
+    margin: 40px 0 20px;
+    text-align: center;
+    padding-top: 5%;
+    padding-bottom: 5%;
+  }
+
+  .video-title {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+
+  }
+  
+  .video-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .video {
+    flex-basis: 33.33%;
+    margin: 10px;
+  }
+  
+  .video-wrapper {
+    position: relative;
+    padding-bottom: 56.25%;
+    height: 0;
+  }
+  
+  .video-wrapper iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+  }
+  
+  /* Estilos responsive */
+  
+  @media screen and (max-width: 768px) {
+    .video {
+      flex-basis: 50%;
+    }
+  }
+  
+  @media screen and (max-width: 576px) {
+    .video {
+      flex-basis: 100%;
+    }
+  }
+  
+                                   
+  
